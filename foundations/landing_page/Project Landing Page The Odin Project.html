@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html class="light" data-darkreader-mode="dynamic" data-darkreader-scheme="dark" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><style type="text/css">.turbo-progress-bar {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: #0076ff;
+  z-index: 2147483647;
+  transition:
+    width 300ms ease-out,
+    opacity 150ms 150ms ease-in;
+  transform: translate3d(0, 0, 0);
+}
+</style><style class="darkreader darkreader--sync" media="screen"></style><style class="darkreader darkreader--fallback" media="screen"></style><style class="darkreader darkreader--text" media="screen"></style><style class="darkreader darkreader--invert" media="screen">.jfk-bubble.gtx-bubble, .captcheck_answer_label > input + img, span#closed_text > img[src^="https://www.gstatic.com/images/branding/googlelogo"], span[data-href^="https://www.hcaptcha.com/"] > #icon, #bit-notification-bar-iframe, ::-webkit-calendar-picker-indicator {
+    filter: invert(100%) hue-rotate(180deg) contrast(90%) !important;
+}</style><style class="darkreader darkreader--inline" media="screen">[data-darkreader-inline-bgcolor] {
+  background-color: var(--darkreader-inline-bgcolor) !important;
+}
+[data-darkreader-inline-bgimage] {
+  background-image: var(--darkreader-inline-bgimage) !important;
+}
+[data-darkreader-inline-border] {
+  border-color: var(--darkreader-inline-border) !important;
+}
+[data-darkreader-inline-border-bottom] {
+  border-bottom-color: var(--darkreader-inline-border-bottom) !important;
+}
+[data-darkreader-inline-border-left] {
+  border-left-color: var(--darkreader-inline-border-left) !important;
+}
+[data-darkreader-inline-border-right] {
+  border-right-color: var(--darkreader-inline-border-right) !important;
+}
+[data-darkreader-inline-border-top] {
+  border-top-color: var(--darkreader-inline-border-top) !important;
+}
+[data-darkreader-inline-boxshadow] {
+  box-shadow: var(--darkreader-inline-boxshadow) !important;
+}
+[data-darkreader-inline-color] {
+  color: var(--darkreader-inline-color) !important;
+}
+[data-darkreader-inline-fill] {
+  fill: var(--darkreader-inline-fill) !important;
+}
+[data-darkreader-inline-stroke] {
+  stroke: var(--darkreader-inline-stroke) !important;
+}
+[data-darkreader-inline-outline] {
+  outline-color: var(--darkreader-inline-outline) !important;
+}
+[data-darkreader-inline-stopcolor] {
+  stop-color: var(--darkreader-inline-stopcolor) !important;
+}</style><style class="darkreader darkreader--variables" media="screen">:root {
+   --darkreader-neutral-background: #131516;
+   --darkreader-neutral-text: #d8d4cf;
+   --darkreader-selection-background: #004daa;
+   --darkreader-selection-text: #e8e6e3;
+}</style><style class="darkreader darkreader--root-vars" media="screen"></style><style class="darkreader darkreader--user-agent" media="screen">html {
+    background-color: #181a1b !important;
+}
+html {
+    color-scheme: dark !important;
+}
+html, body, input, textarea, select, button, dialog {
+    background-color: #181a1b;
+}
+html, body, input, textarea, select, button {
+    border-color: #736b5e;
+    color: #e8e6e3;
+}
+a {
+    color: #3391ff;
+}
+table {
+    border-color: #545b5e;
+}
+::placeholder {
+    color: #b2aba1;
+}
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    background-color: #404400 !important;
+    color: #e8e6e3 !important;
+}
+::-webkit-scrollbar {
+    background-color: #202324;
+    color: #aba499;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #454a4d;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #575e62;
+}
+::-webkit-scrollbar-thumb:active {
+    background-color: #484e51;
+}
+::-webkit-scrollbar-corner {
+    background-color: #181a1b;
+}
+* {
+    scrollbar-color: #454a4d #202324;
+}
+::selection {
+    background-color: #004daa !important;
+    color: #e8e6e3 !important;
+}
+::-moz-selection {
+    background-color: #004daa !important;
+    color: #e8e6e3 !important;
+}</style>
+    <title>
+      Project: Landing Page | The Odin Project
+    </title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<script src="Project%20Landing%20Page%20The%20Odin%20Project_files/nr-1216.min.js"></script><script type="text/javascript" async="" src="Project%20Landing%20Page%20The%20Odin%20Project_files/google-analytics_ga.js"></script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"17c82925e3","applicationID":"2418536","transactionName":"d1xcEEpcDg1RS05aU0dAXQpLHBEJW04=","queueTime":0,"applicationTime":63,"agent":""}</script>
+<script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"17c82925e3",applicationID:"2418536"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(){}function i(t,e,n,r){return function(){return s.recordSupportability("API/"+e+"/called"),o(t+e,[u.now()].concat(c(arguments)),n?null:this,r),n?void 0:this}}var o=t("handle"),a=t(9),c=t(10),f=t("ee").get("tracer"),u=t("loader"),s=t(4),d=NREUM;"undefined"==typeof window.newrelic&&(newrelic=d);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",v=l+"ixn-";a(p,function(t,e){d[e]=i(l,e,!0,"api")}),d.addPageAction=i(l,"addPageAction",!0),d.setCurrentRouteName=i(l,"routeName",!0),e.exports=newrelic,d.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(v+"tracer",[u.now(),t,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw f.emit("fn-err",[arguments,this,t],n),t}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(v,e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),s.recordSupportability("API/noticeError/called"),o("err",[t,u.now(),!1,e])}},{}],2:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],3:[function(t,e,n){var r=!1;try{var i=Object.defineProperty({},"passive",{get:function(){r=!0}});window.addEventListener("testPassive",null,i),window.removeEventListener("testPassive",null,i)}catch(o){}e.exports=function(t){return r?{passive:!0,capture:!!t}:!!t}},{}],4:[function(t,e,n){function r(t,e){var n=[a,t,{name:t},e];return o("storeMetric",n,null,"api"),n}function i(t,e){var n=[c,t,{name:t},e];return o("storeEventMetrics",n,null,"api"),n}var o=t("handle"),a="sm",c="cm";e.exports={constants:{SUPPORTABILITY_METRIC:a,CUSTOM_METRIC:c},recordSupportability:r,recordCustom:i}},{}],5:[function(t,e,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=t(11);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],6:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?l("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&l("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();if(n.length>0){var r=n[n.length-1];if(u&&u<r.startTime)return;var i=[r],o=a({});o&&i.push(o),l("lcp",i)}}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||l("cls",[t])})}function a(t){var e=navigator.connection||navigator.mozConnection||navigator.webkitConnection;if(e)return e.type&&(t["net-type"]=e.type),e.effectiveType&&(t["net-etype"]=e.effectiveType),e.rtt&&(t["net-rtt"]=e.rtt),e.downlink&&(t["net-dlink"]=e.downlink),t}function c(t){if(t instanceof y&&!w){var e=Math.round(t.timeStamp),n={type:t.type};a(n),e<=v.now()?n.fid=v.now()-e:e>v.offset&&e<=Date.now()?(e-=v.offset,n.fid=v.now()-e):e=v.now(),w=!0,l("timing",["fi",e,n])}}function f(t){"hidden"===t&&(u=v.now(),l("pageHide",[u]))}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var u,s,d,p,l=t("handle"),v=t("loader"),m=t(8),g=t(3),y=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){s=new PerformanceObserver(r);try{s.observe({entryTypes:["paint"]})}catch(h){}d=new PerformanceObserver(i);try{d.observe({entryTypes:["largest-contentful-paint"]})}catch(h){}p=new PerformanceObserver(o);try{p.observe({type:"layout-shift",buffered:!0})}catch(h){}}if("addEventListener"in document){var w=!1,b=["click","keydown","mousedown","pointerdown","touchstart"];b.forEach(function(t){document.addEventListener(t,c,g(!1))})}m(f)}},{}],7:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}e.exports={agent:i,version:o,match:r}},{}],8:[function(t,e,n){function r(t){function e(){t(c&&document[c]?document[c]:document[o]?"hidden":"visible")}"addEventListener"in document&&a&&document.addEventListener(a,e,i(!1))}var i=t(3);e.exports=r;var o,a,c;"undefined"!=typeof document.hidden?(o="hidden",a="visibilitychange",c="visibilityState"):"undefined"!=typeof document.msHidden?(o="msHidden",a="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(o="webkitHidden",a="webkitvisibilitychange",c="webkitVisibilityState")},{}],9:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],10:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],11:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?u(t,f,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){t&&a&&t(n,r,i);for(var c=e(i),f=m(n),u=f.length,s=0;s<u;s++)f[s].apply(c,r);var p=d[w[n]];return p&&p.push([b,n,r,c]),c}}function o(t,e){h[t]=m(t).concat(e)}function v(t,e){var n=h[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return h[t]||[]}function g(t){return p[t]=p[t]||i(n)}function y(t,e){l.aborted||s(t,function(t,n){e=e||"feature",w[n]=e,e in d||(d[e]=[])})}var h={},w={},b={on:o,addEventListener:o,removeEventListener:v,emit:n,get:g,listeners:m,context:e,buffer:y,abort:c,aborted:!1};return b}function o(t){return u(t,f,a)}function a(){return new r}function c(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var f="nr@context",u=t("gos"),s=t(9),d={},p={},l=e.exports=i();e.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!M++){var t=T.info=NREUM.info,e=m.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();f(x,function(e,n){t[e]||(t[e]=n)});var n=a();c("mark",["onload",n+T.offset],null,"api"),c("timing",["load",n]);var r=m.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https://")?r.src=t.agent:r.src=l+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===m.readyState&&o()}function o(){c("mark",["domContent",a()+T.offset],null,"api")}var a=t(5),c=t("handle"),f=t(9),u=t("ee"),s=t(7),d=t(2),p=t(3),l=d.getConfiguration("ssl")===!1?"http":"https",v=window,m=v.document,g="addEventListener",y="attachEvent",h=v.XMLHttpRequest,w=h&&h.prototype,b=!1;NREUM.o={ST:setTimeout,SI:v.setImmediate,CT:clearTimeout,XHR:h,REQ:v.Request,EV:v.Event,PR:v.Promise,MO:v.MutationObserver};var E=""+location,x={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1216.min.js"},O=h&&w&&w[g]&&!/CriOS/.test(navigator.userAgent),T=e.exports={offset:a.getLastTimestamp(),now:a,origin:E,features:{},xhrWrappable:O,userAgent:s,disabled:b};if(!b){t(1),t(6),m[g]?(m[g]("DOMContentLoaded",o,p(!1)),v[g]("load",r,p(!1))):(m[y]("onreadystatechange",i),v[y]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var M=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,f,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,f],s],t)}c(n+"start",[o,a,f],s,u);try{return p=e.apply(a,o)}catch(v){throw c(n+"err",[o,a,v],s,u),v}finally{c(n+"end",[o,a,p],s,u)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var c,f,u,s="-"===r.charAt(0);for(u=0;u<e.length;u++)f=e[u],c=t[f],a(c)||(t[f]=n(c,s?f+r:r,i,f,o))}function c(n,r,o,a){if(!v||e){var c=v;v=!0;try{t.emit(n,r,o,e,a)}catch(f){i([f,n,r,o],t)}v=c}}return t||(t=s),n.inPlace=r,n.flag=p,n}function i(t,e){e||(e=s);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function c(t,e){var n=e(t);return n[p]=t,o(t,n,s),n}function f(t,e,n){var r=t[e];t[e]=c(r,n)}function u(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var s=t("ee"),d=t(10),p="nr@original",l=Object.prototype.hasOwnProperty,v=!1;e.exports=r,e.exports.wrapFunction=c,e.exports.wrapInPlace=f,e.exports.argsToArray=u},{}]},{},["loader"]);</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Odin Project empowers aspiring web developers to learn together for free">
+    <meta property="og:image" content="https://www.theodinproject.com/assets/og-logo-022832d4cefeec1d5266237be260192f5980f9bcbf1c9ca151b358f0ce1fd2df.png">
+    <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="Y0FYVvmo-mujizSyZ7E95e9EsmgKlVcMbiZJG3ozPLjfzjWfNpCw0_Np3EeXNIgtZgR9CZvLQaEzkicR7i2vIA">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.theodinproject.com/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="https://www.theodinproject.com/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://www.theodinproject.com/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="https://www.theodinproject.com/manifest.json">
+    <link rel="mask-icon" href="https://www.theodinproject.com/safari-pinned-tab.svg" color="#5bbad5">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="Project%20Landing%20Page%20The%20Odin%20Project_files/css2.css" rel="stylesheet">
+
+    <link rel="stylesheet" media="all" href="Project%20Landing%20Page%20The%20Odin%20Project_files/application_stylesheet-20ed28b11729a178e23244ec7d20f55631ee3.css"><style class="darkreader darkreader--sync" media="screen"></style>
+    <link rel="stylesheet" media="screen" href="Project%20Landing%20Page%20The%20Odin%20Project_files/839.css"><style class="darkreader darkreader--sync" media="screen"></style>
+<link rel="stylesheet" media="screen" href="Project%20Landing%20Page%20The%20Odin%20Project_files/839-26d7836a.css"><style class="darkreader darkreader--sync" media="screen"></style>
+<link rel="stylesheet" media="screen" href="Project%20Landing%20Page%20The%20Odin%20Project_files/application-3f1c2ab0.css"><style class="darkreader darkreader--sync" media="screen"></style>
+
+    <script src="Project%20Landing%20Page%20The%20Odin%20Project_files/runtime-06b861ffe83d5c105d44.js" data-turbo-track="reload" defer="defer"></script>
+<script src="Project%20Landing%20Page%20The%20Odin%20Project_files/646-b4bb1a1d7e19b02d1234.js" data-turbo-track="reload" defer="defer"></script>
+<script src="Project%20Landing%20Page%20The%20Odin%20Project_files/error_tracking-7ce3da2a70f5b3953c70.js" data-turbo-track="reload" defer="defer"></script>
+<script src="Project%20Landing%20Page%20The%20Odin%20Project_files/839-60d7d7830f3ad533809f.js" data-turbo-track="reload" defer="defer"></script>
+<script src="Project%20Landing%20Page%20The%20Odin%20Project_files/application-ac4b0f82a84f35785d92.js" data-turbo-track="reload" defer="defer"></script>
+  <meta name="darkreader" content="2f41a6993afd43df9ff950b5bcb71ca2"><style class="darkreader darkreader--override" media="screen">.vimvixen-hint {
+    background-color: #7b5300 !important;
+    border-color: #d8b013 !important;
+    color: #f3e8c8 !important;
+}
+::placeholder {
+    opacity: 0.5 !important;
+}
+#edge-translate-panel-body,
+.MuiTypography-body1,
+.nfe-quote-text {
+    color: var(--darkreader-neutral-text) !important;
+}
+gr-main-header {
+    background-color: #0f3a48 !important;
+}
+.tou-z65h9k,
+.tou-mignzq,
+.tou-1b6i2ox,
+.tou-lnqlqk {
+    background-color: var(--darkreader-neutral-background) !important;
+}
+.tou-75mvi {
+    background-color: #032029 !important;
+}
+.tou-ta9e87,
+.tou-1w3fhi0,
+.tou-1b8t2us,
+.tou-py7lfi,
+.tou-1lpmd9d,
+.tou-1frrtv8,
+.tou-17ezmgn {
+    background-color: #0a0a0a !important;
+}
+.tou-uknfeu {
+    background-color: #231603 !important;
+}
+.tou-6i3zyv {
+    background-color: #19576c !important;
+}
+embed[type="application/pdf"] { filter: invert(100%) contrast(90%); }</style></head>
+
+  <body class="h-full bg-gray-50 text-gray-600 dark:bg-gray-900 dark:text-gray-300">
+    
+    <div data-controller="mobile-menu" data-mobile-menu-target="container" data-action="custom-events:openMobileMenu@window-&gt;mobile-menu#open" class="fixed inset-0 flex z-40 hidden lg:hidden" role="dialog" aria-modal="true">
+
+  <div data-mobile-menu-target="menuOverlay" data-action="click-&gt;mobile-menu#close" class="fixed inset-0 bg-gray-600 bg-opacity-75 dark:bg-black dark:bg-opacity-60 hidden" aria-hidden="true" data-transition-enter="transition-opacity ease-linear duration-200" data-transition-enter-start="transform opacity-0" data-transition-enter-end="transform opacity-100" data-transition-leave="transition-opacity ease-linear duration-200" data-transition-leave-start="transform opacity-100" data-transition-leave-end="transform opacity-0">
+  </div>
+
+    <div data-mobile-menu-target="menu" class="relative flex-1 flex flex-col max-w-xs w-full bg-white focus:outline-none hidden dark:bg-gray-800" data-transition-enter="transition ease-in-out duration-200 transform" data-transition-enter-start="-translate-x-full" data-transition-enter-end="translate-x-0" data-transition-leave="transition ease-in-out duration-200 transform" data-transition-leave-start="translate-x-0" data-transition-leave-end="-translate-x-full">
+
+      <div data-mobile-menu-target="closeButton" class="absolute top-2 right-2 -mr-12 pt-3 hidden" data-action="click-&gt;mobile-menu#close" data-transition-enter="transition ease-in-out duration-200" data-transition-enter-start="transform opacity-0" data-transition-enter-end="transform opacity-100" data-transition-leave="transition ease-in duration-200" data-transition-leave-start="transform opacity-100" data-transition-leave-end="transform opacity-0">
+        <button type="button" class="ml-1 flex items-center justify-center h-10 w-10 rounded-full focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+          <span class="sr-only">Close sidebar</span>
+          <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" style="--darkreader-inline-stroke: currentColor;" data-darkreader-inline-stroke="">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+
+      <div class="flex-1 h-0 pt-3 pb-4 overflow-y-auto">
+        <div class="flex-shrink-0 flex items-center px-4">
+          <a href="https://www.theodinproject.com/">
+  <svg xmlns="http://www.w3.org/2000/svg" width="205" height="59" viewBox="0 0 205 59" fill="none" role="img" aria-labelledby="agmo99wvbwcv6rbzcugli9zwvgsf6sgx" class="h-15 w-auto text-gray-800 dark:text-gray-300"><title id="agmo99wvbwcv6rbzcugli9zwvgsf6sgx">Odin Logo</title>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.68945 34.7331L13.1482 19.2902H30.9833L35.442 34.7331H8.68945Z" fill="#EED9C3" style="--darkreader-inline-fill: #e8cbad;" data-darkreader-inline-fill=""></path>
+<ellipse cx="27.7849" cy="27.1223" rx="1.26005" ry="1.24284" fill="#353535" style="--darkreader-inline-fill: #c7c2ba;" data-darkreader-inline-fill=""></ellipse>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M19.446 25.7092C19.446 25.2752 19.0891 24.9233 18.6493 24.9233C17.638 24.9233 15.9034 24.9233 14.8922 24.9233C14.4523 24.9233 14.0955 25.2752 14.0955 25.7092C14.0955 26.3856 14.0955 27.3716 14.0955 28.1426C14.0955 28.7935 14.6305 29.3212 15.2902 29.3212C15.6995 29.3212 16.1763 29.3212 16.6578 29.3212C17.3973 29.3212 18.1062 29.0314 18.6295 28.5155C19.1522 28.0001 19.446 27.3004 19.446 26.5712C19.446 26.2585 19.446 25.9621 19.446 25.7092Z" fill="#A78347" style="--darkreader-inline-fill: #be9d66;" data-darkreader-inline-fill=""></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M35.0004 4.5308L43.8517 0L39.0002 18L35.0002 22L35.0004 4.5308Z" fill="#E3B261" style="--darkreader-inline-fill: #e4b465;" data-darkreader-inline-fill=""></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.8514 4.5308L0.000132561 0L4.85156 18L8.85156 22L8.8514 4.5308Z" fill="#E3B261" style="--darkreader-inline-fill: #e4b465;" data-darkreader-inline-fill=""></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M35.442 12.7438C35.442 12.7438 28.7539 8.34589 22.0657 8.34589C15.3776 8.34589 8.68945 12.7438 8.68945 12.7438V25.9373L10.473 29.4556C11.7527 24.5929 17.5445 22.5672 21.576 25.5723L22.0657 25.9373L22.5554 25.5723C26.587 22.5672 32.3788 24.5929 33.6585 29.4556L35.442 25.9373V12.7438Z" fill="#E3B261" style="--darkreader-inline-fill: #e4b465;" data-darkreader-inline-fill=""></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M17.6068 32.5341L14.0398 53.2041L9.12134 49.6858L13.148 34.7331L17.6068 32.5341Z" fill="#D4D4D4" style="--darkreader-inline-fill: #cdc8c2;" data-darkreader-inline-fill=""></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M26.5243 32.5341L30.0913 53.2041L35.0098 49.6858L30.9831 34.7331L26.5243 32.5341Z" fill="#D5D5D5" style="--darkreader-inline-fill: #cdc9c3;" data-darkreader-inline-fill=""></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.68933 25.9373L5.12231 39.1309L9.58108 47.9267L13.1481 34.7331L8.68933 25.9373Z" fill="#E6E6E6" style="--darkreader-inline-fill: #d8d5d0;" data-darkreader-inline-fill=""></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M35.4418 25.9373L39.0088 39.1309L34.55 47.9267L30.983 34.7331L35.4418 25.9373Z" fill="#E6E6E6" style="--darkreader-inline-fill: #d8d5d0;" data-darkreader-inline-fill=""></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M17.6069 32.5341L13.594 54.0837L22.0656 58.4815L30.5373 54.0837L26.5244 32.5341L22.3983 30.4992L22.0656 30.3352L17.6069 32.5341Z" fill="#E6E6E6" style="--darkreader-inline-fill: #d8d5d0;" data-darkreader-inline-fill=""></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M23.6636 33.4137H20.5425C20.5425 33.4137 20.5425 33.9348 20.5425 34.514C20.5425 34.9222 20.707 35.3131 20.9995 35.6016C21.292 35.8901 21.6884 36.0524 22.1022 36.0524C22.1026 36.0524 22.1035 36.0524 22.1039 36.0524C22.5177 36.0524 22.9141 35.8901 23.2066 35.6016C23.4991 35.3131 23.6636 34.9222 23.6636 34.514C23.6636 33.9348 23.6636 33.4137 23.6636 33.4137Z" fill="#353535" style="--darkreader-inline-fill: #c7c2ba;" data-darkreader-inline-fill=""></path>
+<path d="M68.808 20.384L67.704 20.456C67.368 20.456 67.056 20.456 66.696 20.432C66.504 20.432 66.288 20.6 66.144 20.6L65.688 20.408L63.36 20.288L63.288 22.256L63.576 22.544L65.04 22.496C65.112 22.496 65.256 22.472 65.424 22.424L65.544 22.304L66.072 22.376L66.216 23.36L66.12 24.896L66.264 26.024L66.144 30.92L66.024 34.304L66.24 34.544L65.88 36.056V37.904L67.152 38.096L67.824 37.976L68.52 37.592L68.328 35.888V31.376L68.04 30.92L68.064 30.896L68.28 29.456L68.256 27.608V27.2C68.256 27.032 68.232 26.816 68.232 26.624C68.208 26.48 68.208 25.88 68.208 25.664L68.256 23.888L68.16 23.36L68.304 22.352H69.048L69.768 22.4L70.008 22.472H71.088L71.16 21.344L71.016 20.336L68.808 20.384ZM73.2638 33.992L73.3118 35.504L73.6478 35.864L73.2638 36.32L73.1918 37.928L74.7038 38.072L75.6878 38.024L75.7118 37.136L75.6398 36.056L75.4958 34.784L75.5198 34.712L75.6398 30.536L77.5118 29.744H77.5358L78.9278 29.432L78.9038 29.864L78.9758 30.2L78.9278 33.896L79.2878 34.28L79.0478 34.496L78.8798 37.184L79.1918 38.024H80.5838L81.4718 37.976L81.4238 36.656L81.2558 36.056L81.2078 32.984L81.1598 28.688L81.1118 28.208L81.0398 27.128L81.1598 24.872L80.9438 24.176L81.1838 23.864L81.2078 22.952V22.976L81.3518 21.608L81.4238 20.408L80.0558 20.36L79.1678 20.336L78.8078 21.032L78.9278 21.992L78.9758 24.152L79.0478 26.336L78.9518 26.984L78.6878 27.104L78.2318 27.32L77.2478 27.752L77.0318 28.016L76.6478 27.872L75.6398 28.232L75.5918 28.256L75.3758 25.928L75.4718 24.344L75.2078 24.128L75.4958 23.672L75.6158 22.208L75.7118 20.48L73.6478 20.216L73.0718 20.6L73.2398 22.088L73.1678 22.568L73.2398 24.152L73.4078 25.64L73.3118 27.992L73.4798 30.704L73.2638 33.992ZM90.8258 22.616L90.8738 21.272L90.8498 20.336L88.4738 20.36L87.5378 20.552L87.2018 20.36H85.8338L84.7058 20.504L84.8258 22.208L85.0898 22.52L84.8258 22.928L84.8498 24.152L84.8258 26.024V27.8L84.7538 28.688L84.9458 31.064L84.8498 31.256L84.8738 32.552V33.104L85.0898 33.392L84.8018 34.016L84.7778 35.12L84.8018 35.384L84.6578 37.016L84.7778 38L86.5778 38.024L86.7698 37.904H87.6098L88.9778 38.048L90.5618 38.072L91.1138 37.832L91.2098 36.944L91.2578 35.744L90.0578 35.72L89.4578 35.912L87.5378 35.936L87.3458 35.888L87.1298 35.84L87.0818 33.512L87.0578 33.464L87.1298 33.248L86.9858 32.552L87.0818 30.08H87.4658L88.9778 30.128L90.1538 30.176L90.2018 29.192L90.3458 28.472L90.0338 27.872L88.8098 27.992L87.8738 28.04L86.9858 27.992L86.9378 27.056L86.6978 26.864L86.9618 26.432L87.0818 25.712V23.336L87.1298 22.736V22.472H87.3458L88.6658 22.52L89.0498 22.448L89.1218 22.424L89.6978 22.616H90.8258ZM102.331 20.312L102.115 20.336H101.227L101.179 20.504L101.035 21.224L100.939 21.368L99.6429 24.608L99.7629 24.872L99.3309 25.184L98.0349 28.328L97.8429 28.448L97.8909 29.96L98.4669 31.184L99.3309 33.224L100.051 34.712H100.315L100.243 35.12L101.083 37.208L101.107 38L103.291 38.024L103.339 37.76L103.627 36.992L104.923 33.92L105.475 32.768L105.499 32.384L105.691 32.144L106.867 29.768L106.939 28.448L106.123 26.672L105.475 25.232H105.235L105.115 24.584L103.891 21.584L103.411 20.264L102.331 20.312ZM102.379 34.952L101.323 32.192L100.843 31.208L100.363 30.872L100.603 30.584L100.387 29.888L100.075 29.096L100.051 28.808L100.843 26.744L100.675 26.36L101.011 26.264L102.331 22.784L102.475 23.24L103.027 24.704L103.459 24.968L103.243 25.256L104.179 27.68L104.467 28.496L104.659 29.096L103.483 31.976L103.507 32.408H103.531L103.243 32.696L102.475 35.216L102.379 34.952ZM113.227 35.72L114.067 34.016L116.539 30.224L116.971 29.504L116.947 27.752L116.515 27.2L116.539 27.248L114.715 24.824L114.091 23.72L113.251 22.88L112.987 22.088L111.499 20.048L110.227 20.432L109.195 20.744L109.219 21.632L109.291 22.88L109.531 23.192L109.291 23.648L109.315 29.936L109.459 30.872L109.315 36.248V36.224L109.267 37.832L110.827 38.048L111.619 38.264L113.227 35.72ZM111.451 26.744L111.379 23.264L111.523 23.432L113.899 27.248L114.379 27.632L114.475 28.208L114.907 28.856L114.475 29.552L113.683 30.872L112.675 32.816L112.867 33.032L112.435 33.248L111.379 34.952L111.355 35L111.379 33.704L111.475 28.952L111.091 27.824L111.451 26.744ZM119.431 27.56L119.359 28.88L119.287 29.624V34.112V34.976L119.575 35.384L119.287 35.864L118.951 38L120.055 38.024L120.559 38.048L121.615 37.712L121.639 36.824L121.591 36.368L121.543 36.008V29.36L121.279 29.192L121.495 28.688L121.447 28.088L121.351 27.152L121.423 25.928L121.495 22.784L121.615 22.184L121.735 20.432L120.175 20.336L119.047 20.408L119.167 21.608L119.383 21.728L119.191 22.16L119.263 26.96L119.431 27.56ZM133.115 35.888V35.12L132.947 29.864L132.683 29.072L132.875 28.064L133.115 22.16L133.163 20.528L132.179 20.36L130.787 20.384V22.304L131.027 22.64L130.787 23.384V25.448L129.995 24.152L129.803 24.056L129.203 23.096L127.043 20.12L125.147 20.648V21.896L125.243 24.392L125.339 25.76L125.243 30.752L125.459 31.232L125.267 31.928L125.123 35.336V35.744L125.195 35.96L125.027 37.88L126.059 38.072L127.475 38.024L127.523 36.488L127.451 36.152L127.475 33.656L127.259 32.744L127.379 31.88L127.427 26.408L127.139 26.096L127.115 26.048L127.451 25.184V23.888L128.075 24.752L129.059 26.12L129.755 26.96L130.091 27.488L130.427 27.848L130.811 28.496L130.835 30.992L130.907 31.448L130.835 31.568L130.811 33.872L130.835 36.152L130.811 38.024L131.627 38.072L132.947 38.048L133.259 37.232L133.115 35.888ZM147.393 28.76L148.161 28.016L148.905 27.104L148.953 25.448L146.457 22.808L145.953 22.64L145.857 22.232L143.697 20L142.929 20.288L141.777 20.792L141.825 22.4L141.945 23.384V27.32L141.897 27.44L141.873 33.44L142.161 33.752L141.945 34.496L141.681 37.928L143.073 38.072L144.273 38L144.129 35.024L143.745 34.688L144.129 34.112L144.081 32.456L144.297 32.216L145.905 30.392L147.393 28.76ZM144.105 27.128L143.841 26.648L144.081 25.904L144.057 24.752L144.081 23.048L145.473 24.608L145.689 24.752L145.857 25.088L146.889 26.24L146.505 26.792L146.265 27.392L146.001 27.32L144.801 28.736L144.105 29.48V27.128ZM153.466 30.608L154.426 32.552L154.642 33.104L155.53 34.784L155.818 34.928L155.794 35.336L156.634 37.256L157.21 38.192L159.154 37.112L159.178 36.416L158.386 35.576L157.954 34.664V34.688L157.618 33.992L157.474 33.92V33.608L156.514 31.976C156.346 31.736 156.202 31.616 156.01 31.4V30.992C155.866 30.704 155.578 30.296 155.41 29.96L156.082 29.048L156.49 28.544L157.258 27.632L158.362 26.288L158.53 24.848L157.378 23.792C157.354 23.792 156.97 23.912 156.946 23.888L156.802 23.288L152.986 19.976L151.09 20.744L151.186 22.808L151.306 27.392L151.114 27.872L151.162 29.12L151.258 31.928V32.864L151.474 33.176L151.114 34.112L150.97 37.928L152.554 38.072L153.514 37.688L153.49 35.696L153.418 35.48L153.346 33.08L153.322 30.464L153.466 30.608ZM153.37 28.352L153.274 26.216L153.226 25.952L153.178 25.808L153.082 25.376L153.274 24.92V24.68L153.322 22.832L155.53 25.016L155.698 25.136L156.178 25.736L155.914 26.072C155.602 26.504 155.026 27.248 154.69 27.656L153.49 29.144L153.322 29.24L153.37 28.352ZM164.323 20.312L164.107 20.336H163.219L163.171 20.504L163.027 21.224L162.931 21.368L161.635 24.608L161.755 24.872L161.323 25.184L160.027 28.328L159.835 28.448L159.883 29.96L160.459 31.184L161.323 33.224L162.043 34.712H162.307L162.235 35.12L163.075 37.208L163.099 38L165.283 38.024L165.331 37.76L165.619 36.992L166.915 33.92L167.467 32.768L167.491 32.384L167.683 32.144L168.859 29.768L168.931 28.448L168.115 26.672L167.467 25.232H167.227L167.107 24.584L165.883 21.584L165.403 20.264L164.323 20.312ZM164.371 34.952L163.315 32.192L162.835 31.208L162.355 30.872L162.595 30.584L162.379 29.888L162.067 29.096L162.043 28.808L162.835 26.744L162.667 26.36L163.003 26.264L164.323 22.784L164.467 23.24L165.019 24.704L165.451 24.968L165.235 25.256L166.171 27.68L166.459 28.496L166.651 29.096L165.475 31.976L165.499 32.408H165.523L165.235 32.696L164.467 35.216L164.371 34.952ZM171.71 27.608L171.59 28.928L171.614 30.416L171.638 30.752V31.688L171.542 34.304L171.59 34.52L171.23 35.024L170.174 35.72L169.118 36.152V37.4L170.438 38.384L172.214 36.944L172.19 36.464L172.838 36.368L173.606 35.696L173.99 35.024L173.702 30.896L173.51 30.176L173.774 29.984L173.678 23.288L173.966 21.176L173.654 20.336L171.374 20.384V21.728L171.806 21.968L171.494 22.352L171.566 26.408L171.71 27.608ZM183.502 22.616L183.55 21.272L183.526 20.336L181.15 20.36L180.214 20.552L179.878 20.36H178.51L177.382 20.504L177.502 22.208L177.766 22.52L177.502 22.928L177.526 24.152L177.502 26.024V27.8L177.43 28.688L177.622 31.064L177.526 31.256L177.55 32.552V33.104L177.766 33.392L177.478 34.016L177.454 35.12L177.478 35.384L177.334 37.016L177.454 38L179.254 38.024L179.446 37.904H180.286L181.654 38.048L183.238 38.072L183.79 37.832L183.886 36.944L183.934 35.744L182.734 35.72L182.134 35.912L180.214 35.936L180.022 35.888L179.806 35.84L179.758 33.512L179.734 33.464L179.806 33.248L179.662 32.552L179.758 30.08H180.142L181.654 30.128L182.83 30.176L182.878 29.192L183.022 28.472L182.71 27.872L181.486 27.992L180.55 28.04L179.662 27.992L179.614 27.056L179.374 26.864L179.638 26.432L179.758 25.712V23.336L179.806 22.736V22.472H180.022L181.342 22.52L181.726 22.448L181.798 22.424L182.374 22.616H183.502ZM185.362 30.896L186.226 32.456L187.33 33.488L187.138 33.92L188.962 36.752L189.01 37.04L189.826 38.312L190.642 37.784L191.89 36.752L191.338 35.864L190.09 34.232L188.986 32.36L188.098 30.992L187.882 30.512L187.546 30.176L187.306 29.72L186.946 29.024L187.258 28.448L187.714 27.632L188.506 26.384L189.946 24.248L190.066 23.6L190.474 23.336L191.146 22.4L191.818 21.2L190.018 20L189.178 20.984L189.154 21.176L187.81 23.384V23.48L187.21 24.44V25.016L186.346 25.856L184.786 28.496L184.81 30.032L185.362 30.896ZM198.12 20.384L197.016 20.456C196.68 20.456 196.368 20.456 196.008 20.432C195.816 20.432 195.6 20.6 195.456 20.6L195 20.408L192.672 20.288L192.6 22.256L192.888 22.544L194.352 22.496C194.424 22.496 194.568 22.472 194.736 22.424L194.856 22.304L195.384 22.376L195.528 23.36L195.432 24.896L195.576 26.024L195.456 30.92L195.336 34.304L195.552 34.544L195.192 36.056V37.904L196.464 38.096L197.136 37.976L197.832 37.592L197.64 35.888V31.376L197.352 30.92L197.376 30.896L197.592 29.456L197.568 27.608V27.2C197.568 27.032 197.544 26.816 197.544 26.624C197.52 26.48 197.52 25.88 197.52 25.664L197.568 23.888L197.472 23.36L197.616 22.352H198.36L199.08 22.4L199.32 22.472H200.4L200.472 21.344L200.328 20.336L198.12 20.384Z" fill="currentColor" style="--darkreader-inline-fill: currentColor;" data-darkreader-inline-fill=""></path>
+</svg>
+
+</a>
+        </div>
+        <nav aria-label="Sidebar" class="mt-3">
+          <div class="px-2 space-y-1">
+                <a class="text-gray-600 hover:bg-gray-50 hover:text-gray-900 group flex items-center px-2 py-2 text-base font-medium dark:text-gray-300 dark:hover:text-gray-200 dark:hover:bg-gray-700/60 " data-test-id="nav-home" href="https://www.theodinproject.com/">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-gray-400 group-hover:text-gray-500 dark:text-gray-200 dark:group-hover:text-gray-200 mr-4 h-6 w-6" role="img" aria-labelledby="adbspn0dxjld3yekefpuljidsuhsscw4" style="--darkreader-inline-stroke: currentColor;" data-darkreader-inline-stroke=""><title id="adbspn0dxjld3yekefpuljidsuhsscw4">Home icon</title>
+  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"></path>
+</svg>
+
+    Home
+</a>
+                <a class="text-gray-600 hover:bg-gray-50 hover:text-gray-900 group flex items-center px-2 py-2 text-base font-medium dark:text-gray-300 dark:hover:text-gray-200 dark:hover:bg-gray-700/60 " data-test-id="nav-all-paths" href="https://www.theodinproject.com/paths">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-gray-400 group-hover:text-gray-500 dark:text-gray-200 dark:group-hover:text-gray-200 mr-4 h-6 w-6" role="img" aria-labelledby="aeypmqt94mlq4y1ng38re60jxnrz51ec" style="--darkreader-inline-stroke: currentColor;" data-darkreader-inline-stroke=""><title id="aeypmqt94mlq4y1ng38re60jxnrz51ec">All Paths icon</title>
+  <path stroke-linecap="round" stroke-linejoin="round" d="M9 6.75V15m6-6v8.25m.503 3.498l4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 00-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0z"></path>
+</svg>
+
+    All Paths
+</a>
+                <a class="text-gray-600 hover:bg-gray-50 hover:text-gray-900 group flex items-center px-2 py-2 text-base font-medium dark:text-gray-300 dark:hover:text-gray-200 dark:hover:bg-gray-700/60 " data-test-id="nav-about" href="https://www.theodinproject.com/about">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-gray-400 group-hover:text-gray-500 dark:text-gray-200 dark:group-hover:text-gray-200 mr-4 h-6 w-6" role="img" aria-labelledby="ab8ru4bfl1pffkprzgrag93hbf1czbac" style="--darkreader-inline-stroke: currentColor;" data-darkreader-inline-stroke=""><title id="ab8ru4bfl1pffkprzgrag93hbf1czbac">About icon</title>
+  <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"></path>
+</svg>
+
+    About
+</a>
+                <a class="text-gray-600 hover:bg-gray-50 hover:text-gray-900 group flex items-center px-2 py-2 text-base font-medium dark:text-gray-300 dark:hover:text-gray-200 dark:hover:bg-gray-700/60 " data-test-id="nav-community" href="https://discord.gg/fbFCkYabZB">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-gray-400 group-hover:text-gray-500 dark:text-gray-200 dark:group-hover:text-gray-200 mr-4 h-6 w-6" role="img" aria-labelledby="ad09cxahrmiuzm0hv4nuljpk11wvp03k" style="--darkreader-inline-stroke: currentColor;" data-darkreader-inline-stroke=""><title id="ad09cxahrmiuzm0hv4nuljpk11wvp03k">Community icon</title>
+  <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155"></path>
+</svg>
+
+    Community
+</a>
+          </div>
+          <hr class="border-t border-gray-200 my-4" aria-hidden="true">
+          <div class="px-2 space-y-1">
+                <a class="text-gray-600 hover:bg-gray-50 hover:text-gray-900 group flex items-center px-2 py-2 text-base font-medium dark:text-gray-300 dark:hover:text-gray-200 dark:hover:bg-gray-700/60 " data-test-id="nav-sign-up" href="https://www.theodinproject.com/sign_up">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-gray-400 group-hover:text-gray-500 dark:text-gray-200 dark:group-hover:text-gray-200 mr-4 h-6 w-6" role="img" aria-labelledby="atf5pueumu67fostu9vejbs5inc9sh1m" style="--darkreader-inline-stroke: currentColor;" data-darkreader-inline-stroke=""><title id="atf5pueumu67fostu9vejbs5inc9sh1m">Get started icon</title>
+  <path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"></path>
+</svg>
+
+    Get started
+</a>
+              <turbo-frame id="theme_switcher_mobile">
+                <a class="text-gray-700 group flex items-center text-sm dark:text-gray-300 text-gray-600 hover:bg-gray-50 hover:text-gray-900 text-base font-medium py-2 px-2 dark:hover:bg-gray-600 dark:hover:text-gray-200" data-turbo="true" data-turbo-method="put" data-turbo-frame="_top" data-controller="theme--switcher" data-theme--switcher-current-theme-value="light" data-theme--switcher-other-theme-value="dark" data-action="click-&gt;theme--switcher#toggle" href="https://www.theodinproject.com/themes?theme=dark">
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 h-5 w-5 text-gray-400 group-hover:text-gray-500 dark:text-gray-300 dark:group-hover:text-gray-400 mr-4 h-6 w-6" role="img" aria-labelledby="a7rek6cgrwe5o53pn8gs4jinmst60p0f" style="--darkreader-inline-stroke: currentColor;" data-darkreader-inline-stroke=""><title id="a7rek6cgrwe5o53pn8gs4jinmst60p0f">theme icon</title>
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"></path>
+</svg>
+
+  Light mode
+</a>
+</turbo-frame>                <a class="text-gray-600 hover:bg-gray-50 hover:text-gray-900 group flex items-center px-2 py-2 text-base font-medium dark:text-gray-300 dark:hover:text-gray-200 dark:hover:bg-gray-700/60 " data-test-id="nav-sign-in" href="https://www.theodinproject.com/sign_in">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-gray-400 group-hover:text-gray-500 dark:text-gray-200 dark:group-hover:text-gray-200 mr-4 h-6 w-6" role="img" aria-labelledby="aspcaja9cxpv34x1bd5p4dihnau7t02i" style="--darkreader-inline-stroke: currentColor;" data-darkreader-inline-stroke=""><title id="aspcaja9cxpv34x1bd5p4dihnau7t02i">Sign in icon</title>
+  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15M12 9l-3 3m0 0l3 3m-3-3h12.75"></path>
+</svg>
+
+    Sign in
+</a>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <div class="flex-shrink-0 w-14" aria-hidden="true">
+      <!-- Force sidebar to shrink to fit close icon -->
+    </div>
+  </div>
+
+
+
+<nav class="shadow-sm bg-white dark:bg-gray-900 dark:shadow-none">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+    <div class="flex justify-between">
+      <div class="flex">
+        <div class="flex-shrink-0 flex items-center">
+          <a class="logo" href="https://www.theodinproject.com/">
+            <img alt="Odin Logo" class="block lg:hidden h-15 w-auto" src="Project%20Landing%20Page%20The%20Odin%20Project_files/odin-icon-b5b31c073f7417a257003166c98cc23743654715305910c068.svg">
+</a>
+          <a href="https://www.theodinproject.com/">
+  <svg xmlns="http://www.w3.org/2000/svg" width="205" height="59" viewBox="0 0 205 59" fill="none" role="img" aria-labelledby="agkjnwx0y718zffhmypkem43x1gcynod" class="hidden lg:block h-15 w-auto text-gray-800 dark:text-gray-300"><title id="agkjnwx0y718zffhmypkem43x1gcynod">Odin Logo</title>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.68945 34.7331L13.1482 19.2902H30.9833L35.442 34.7331H8.68945Z" fill="#EED9C3" style="--darkreader-inline-fill: #e8cbad;" data-darkreader-inline-fill=""></path>
+<ellipse cx="27.7849" cy="27.1223" rx="1.26005" ry="1.24284" fill="#353535" style="--darkreader-inline-fill: #c7c2ba;" data-darkreader-inline-fill=""></ellipse>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M19.446 25.7092C19.446 25.2752 19.0891 24.9233 18.6493 24.9233C17.638 24.9233 15.9034 24.9233 14.8922 24.9233C14.4523 24.9233 14.0955 25.2752 14.0955 25.7092C14.0955 26.3856 14.0955 27.3716 14.0955 28.1426C14.0955 28.7935 14.6305 29.3212 15.2902 29.3212C15.6995 29.3212 16.1763 29.3212 16.6578 29.3212C17.3973 29.3212 18.1062 29.0314 18.6295 28.5155C19.1522 28.0001 19.446 27.3004 19.446 26.5712C19.446 26.2585 19.446 25.9621 19.446 25.7092Z" fill="#A78347" style="--darkreader-inline-fill: #be9d66;" data-darkreader-inline-fill=""></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M35.0004 4.5308L43.8517 0L39.0002 18L35.0002 22L35.0004 4.5308Z" fill="#E3B261" style="--darkreader-inline-fill: #e4b465;" data-darkreader-inline-fill=""></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.8514 4.5308L0.000132561 0L4.85156 18L8.85156 22L8.8514 4.5308Z" fill="#E3B261" style="--darkreader-inline-fill: #e4b465;" data-darkreader-inline-fill=""></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M35.442 12.7438C35.442 12.7438 28.7539 8.34589 22.0657 8.34589C15.3776 8.34589 8.68945 12.7438 8.68945 12.7438V25.9373L10.473 29.4556C11.7527 24.5929 17.5445 22.5672 21.576 25.5723L22.0657 25.9373L22.5554 25.5723C26.587 22.5672 32.3788 24.5929 33.6585 29.4556L35.442 25.9373V12.7438Z" fill="#E3B261" style="--darkreader-inline-fill: #e4b465;" data-darkreader-inline-fill=""></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M17.6068 32.5341L14.0398 53.2041L9.12134 49.6858L13.148 34.7331L17.6068 32.5341Z" fill="#D4D4D4" style="--darkreader-inline-fill: #cdc8c2;" data-darkreader-inline-fill=""></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M26.5243 32.5341L30.0913 53.2041L35.0098 49.6858L30.9831 34.7331L26.5243 32.5341Z" fill="#D5D5D5" style="--darkreader-inline-fill: #cdc9c3;" data-darkreader-inline-fill=""></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.68933 25.9373L5.12231 39.1309L9.58108 47.9267L13.1481 34.7331L8.68933 25.9373Z" fill="#E6E6E6" style="--darkreader-inline-fill: #d8d5d0;" data-darkreader-inline-fill=""></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M35.4418 25.9373L39.0088 39.1309L34.55 47.9267L30.983 34.7331L35.4418 25.9373Z" fill="#E6E6E6" style="--darkreader-inline-fill: #d8d5d0;" data-darkreader-inline-fill=""></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M17.6069 32.5341L13.594 54.0837L22.0656 58.4815L30.5373 54.0837L26.5244 32.5341L22.3983 30.4992L22.0656 30.3352L17.6069 32.5341Z" fill="#E6E6E6" style="--darkreader-inline-fill: #d8d5d0;" data-darkreader-inline-fill=""></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M23.6636 33.4137H20.5425C20.5425 33.4137 20.5425 33.9348 20.5425 34.514C20.5425 34.9222 20.707 35.3131 20.9995 35.6016C21.292 35.8901 21.6884 36.0524 22.1022 36.0524C22.1026 36.0524 22.1035 36.0524 22.1039 36.0524C22.5177 36.0524 22.9141 35.8901 23.2066 35.6016C23.4991 35.3131 23.6636 34.9222 23.6636 34.514C23.6636 33.9348 23.6636 33.4137 23.6636 33.4137Z" fill="#353535" style="--darkreader-inline-fill: #c7c2ba;" data-darkreader-inline-fill=""></path>
+<path d="M68.808 20.384L67.704 20.456C67.368 20.456 67.056 20.456 66.696 20.432C66.504 20.432 66.288 20.6 66.144 20.6L65.688 20.408L63.36 20.288L63.288 22.256L63.576 22.544L65.04 22.496C65.112 22.496 65.256 22.472 65.424 22.424L65.544 22.304L66.072 22.376L66.216 23.36L66.12 24.896L66.264 26.024L66.144 30.92L66.024 34.304L66.24 34.544L65.88 36.056V37.904L67.152 38.096L67.824 37.976L68.52 37.592L68.328 35.888V31.376L68.04 30.92L68.064 30.896L68.28 29.456L68.256 27.608V27.2C68.256 27.032 68.232 26.816 68.232 26.624C68.208 26.48 68.208 25.88 68.208 25.664L68.256 23.888L68.16 23.36L68.304 22.352H69.048L69.768 22.4L70.008 22.472H71.088L71.16 21.344L71.016 20.336L68.808 20.384ZM73.2638 33.992L73.3118 35.504L73.6478 35.864L73.2638 36.32L73.1918 37.928L74.7038 38.072L75.6878 38.024L75.7118 37.136L75.6398 36.056L75.4958 34.784L75.5198 34.712L75.6398 30.536L77.5118 29.744H77.5358L78.9278 29.432L78.9038 29.864L78.9758 30.2L78.9278 33.896L79.2878 34.28L79.0478 34.496L78.8798 37.184L79.1918 38.024H80.5838L81.4718 37.976L81.4238 36.656L81.2558 36.056L81.2078 32.984L81.1598 28.688L81.1118 28.208L81.0398 27.128L81.1598 24.872L80.9438 24.176L81.1838 23.864L81.2078 22.952V22.976L81.3518 21.608L81.4238 20.408L80.0558 20.36L79.1678 20.336L78.8078 21.032L78.9278 21.992L78.9758 24.152L79.0478 26.336L78.9518 26.984L78.6878 27.104L78.2318 27.32L77.2478 27.752L77.0318 28.016L76.6478 27.872L75.6398 28.232L75.5918 28.256L75.3758 25.928L75.4718 24.344L75.2078 24.128L75.4958 23.672L75.6158 22.208L75.7118 20.48L73.6478 20.216L73.0718 20.6L73.2398 22.088L73.1678 22.568L73.2398 24.152L73.4078 25.64L73.3118 27.992L73.4798 30.704L73.2638 33.992ZM90.8258 22.616L90.8738 21.272L90.8498 20.336L88.4738 20.36L87.5378 20.552L87.2018 20.36H85.8338L84.7058 20.504L84.8258 22.208L85.0898 22.52L84.8258 22.928L84.8498 24.152L84.8258 26.024V27.8L84.7538 28.688L84.9458 31.064L84.8498 31.256L84.8738 32.552V33.104L85.0898 33.392L84.8018 34.016L84.7778 35.12L84.8018 35.384L84.6578 37.016L84.7778 38L86.5778 38.024L86.7698 37.904H87.6098L88.9778 38.048L90.5618 38.072L91.1138 37.832L91.2098 36.944L91.2578 35.744L90.0578 35.72L89.4578 35.912L87.5378 35.936L87.3458 35.888L87.1298 35.84L87.0818 33.512L87.0578 33.464L87.1298 33.248L86.9858 32.552L87.0818 30.08H87.4658L88.9778 30.128L90.1538 30.176L90.2018 29.192L90.3458 28.472L90.0338 27.872L88.8098 27.992L87.8738 28.04L86.9858 27.992L86.9378 27.056L86.6978 26.864L86.9618 26.432L87.0818 25.712V23.336L87.1298 22.736V22.472H87.3458L88.6658 22.52L89.0498 22.448L89.1218 22.424L89.6978 22.616H90.8258ZM102.331 20.312L102.115 20.336H101.227L101.179 20.504L101.035 21.224L100.939 21.368L99.6429 24.608L99.7629 24.872L99.3309 25.184L98.0349 28.328L97.8429 28.448L97.8909 29.96L98.4669 31.184L99.3309 33.224L100.051 34.712H100.315L100.243 35.12L101.083 37.208L101.107 38L103.291 38.024L103.339 37.76L103.627 36.992L104.923 33.92L105.475 32.768L105.499 32.384L105.691 32.144L106.867 29.768L106.939 28.448L106.123 26.672L105.475 25.232H105.235L105.115 24.584L103.891 21.584L103.411 20.264L102.331 20.312ZM102.379 34.952L101.323 32.192L100.843 31.208L100.363 30.872L100.603 30.584L100.387 29.888L100.075 29.096L100.051 28.808L100.843 26.744L100.675 26.36L101.011 26.264L102.331 22.784L102.475 23.24L103.027 24.704L103.459 24.968L103.243 25.256L104.179 27.68L104.467 28.496L104.659 29.096L103.483 31.976L103.507 32.408H103.531L103.243 32.696L102.475 35.216L102.379 34.952ZM113.227 35.72L114.067 34.016L116.539 30.224L116.971 29.504L116.947 27.752L116.515 27.2L116.539 27.248L114.715 24.824L114.091 23.72L113.251 22.88L112.987 22.088L111.499 20.048L110.227 20.432L109.195 20.744L109.219 21.632L109.291 22.88L109.531 23.192L109.291 23.648L109.315 29.936L109.459 30.872L109.315 36.248V36.224L109.267 37.832L110.827 38.048L111.619 38.264L113.227 35.72ZM111.451 26.744L111.379 23.264L111.523 23.432L113.899 27.248L114.379 27.632L114.475 28.208L114.907 28.856L114.475 29.552L113.683 30.872L112.675 32.816L112.867 33.032L112.435 33.248L111.379 34.952L111.355 35L111.379 33.704L111.475 28.952L111.091 27.824L111.451 26.744ZM119.431 27.56L119.359 28.88L119.287 29.624V34.112V34.976L119.575 35.384L119.287 35.864L118.951 38L120.055 38.024L120.559 38.048L121.615 37.712L121.639 36.824L121.591 36.368L121.543 36.008V29.36L121.279 29.192L121.495 28.688L121.447 28.088L121.351 27.152L121.423 25.928L121.495 22.784L121.615 22.184L121.735 20.432L120.175 20.336L119.047 20.408L119.167 21.608L119.383 21.728L119.191 22.16L119.263 26.96L119.431 27.56ZM133.115 35.888V35.12L132.947 29.864L132.683 29.072L132.875 28.064L133.115 22.16L133.163 20.528L132.179 20.36L130.787 20.384V22.304L131.027 22.64L130.787 23.384V25.448L129.995 24.152L129.803 24.056L129.203 23.096L127.043 20.12L125.147 20.648V21.896L125.243 24.392L125.339 25.76L125.243 30.752L125.459 31.232L125.267 31.928L125.123 35.336V35.744L125.195 35.96L125.027 37.88L126.059 38.072L127.475 38.024L127.523 36.488L127.451 36.152L127.475 33.656L127.259 32.744L127.379 31.88L127.427 26.408L127.139 26.096L127.115 26.048L127.451 25.184V23.888L128.075 24.752L129.059 26.12L129.755 26.96L130.091 27.488L130.427 27.848L130.811 28.496L130.835 30.992L130.907 31.448L130.835 31.568L130.811 33.872L130.835 36.152L130.811 38.024L131.627 38.072L132.947 38.048L133.259 37.232L133.115 35.888ZM147.393 28.76L148.161 28.016L148.905 27.104L148.953 25.448L146.457 22.808L145.953 22.64L145.857 22.232L143.697 20L142.929 20.288L141.777 20.792L141.825 22.4L141.945 23.384V27.32L141.897 27.44L141.873 33.44L142.161 33.752L141.945 34.496L141.681 37.928L143.073 38.072L144.273 38L144.129 35.024L143.745 34.688L144.129 34.112L144.081 32.456L144.297 32.216L145.905 30.392L147.393 28.76ZM144.105 27.128L143.841 26.648L144.081 25.904L144.057 24.752L144.081 23.048L145.473 24.608L145.689 24.752L145.857 25.088L146.889 26.24L146.505 26.792L146.265 27.392L146.001 27.32L144.801 28.736L144.105 29.48V27.128ZM153.466 30.608L154.426 32.552L154.642 33.104L155.53 34.784L155.818 34.928L155.794 35.336L156.634 37.256L157.21 38.192L159.154 37.112L159.178 36.416L158.386 35.576L157.954 34.664V34.688L157.618 33.992L157.474 33.92V33.608L156.514 31.976C156.346 31.736 156.202 31.616 156.01 31.4V30.992C155.866 30.704 155.578 30.296 155.41 29.96L156.082 29.048L156.49 28.544L157.258 27.632L158.362 26.288L158.53 24.848L157.378 23.792C157.354 23.792 156.97 23.912 156.946 23.888L156.802 23.288L152.986 19.976L151.09 20.744L151.186 22.808L151.306 27.392L151.114 27.872L151.162 29.12L151.258 31.928V32.864L151.474 33.176L151.114 34.112L150.97 37.928L152.554 38.072L153.514 37.688L153.49 35.696L153.418 35.48L153.346 33.08L153.322 30.464L153.466 30.608ZM153.37 28.352L153.274 26.216L153.226 25.952L153.178 25.808L153.082 25.376L153.274 24.92V24.68L153.322 22.832L155.53 25.016L155.698 25.136L156.178 25.736L155.914 26.072C155.602 26.504 155.026 27.248 154.69 27.656L153.49 29.144L153.322 29.24L153.37 28.352ZM164.323 20.312L164.107 20.336H163.219L163.171 20.504L163.027 21.224L162.931 21.368L161.635 24.608L161.755 24.872L161.323 25.184L160.027 28.328L159.835 28.448L159.883 29.96L160.459 31.184L161.323 33.224L162.043 34.712H162.307L162.235 35.12L163.075 37.208L163.099 38L165.283 38.024L165.331 37.76L165.619 36.992L166.915 33.92L167.467 32.768L167.491 32.384L167.683 32.144L168.859 29.768L168.931 28.448L168.115 26.672L167.467 25.232H167.227L167.107 24.584L165.883 21.584L165.403 20.264L164.323 20.312ZM164.371 34.952L163.315 32.192L162.835 31.208L162.355 30.872L162.595 30.584L162.379 29.888L162.067 29.096L162.043 28.808L162.835 26.744L162.667 26.36L163.003 26.264L164.323 22.784L164.467 23.24L165.019 24.704L165.451 24.968L165.235 25.256L166.171 27.68L166.459 28.496L166.651 29.096L165.475 31.976L165.499 32.408H165.523L165.235 32.696L164.467 35.216L164.371 34.952ZM171.71 27.608L171.59 28.928L171.614 30.416L171.638 30.752V31.688L171.542 34.304L171.59 34.52L171.23 35.024L170.174 35.72L169.118 36.152V37.4L170.438 38.384L172.214 36.944L172.19 36.464L172.838 36.368L173.606 35.696L173.99 35.024L173.702 30.896L173.51 30.176L173.774 29.984L173.678 23.288L173.966 21.176L173.654 20.336L171.374 20.384V21.728L171.806 21.968L171.494 22.352L171.566 26.408L171.71 27.608ZM183.502 22.616L183.55 21.272L183.526 20.336L181.15 20.36L180.214 20.552L179.878 20.36H178.51L177.382 20.504L177.502 22.208L177.766 22.52L177.502 22.928L177.526 24.152L177.502 26.024V27.8L177.43 28.688L177.622 31.064L177.526 31.256L177.55 32.552V33.104L177.766 33.392L177.478 34.016L177.454 35.12L177.478 35.384L177.334 37.016L177.454 38L179.254 38.024L179.446 37.904H180.286L181.654 38.048L183.238 38.072L183.79 37.832L183.886 36.944L183.934 35.744L182.734 35.72L182.134 35.912L180.214 35.936L180.022 35.888L179.806 35.84L179.758 33.512L179.734 33.464L179.806 33.248L179.662 32.552L179.758 30.08H180.142L181.654 30.128L182.83 30.176L182.878 29.192L183.022 28.472L182.71 27.872L181.486 27.992L180.55 28.04L179.662 27.992L179.614 27.056L179.374 26.864L179.638 26.432L179.758 25.712V23.336L179.806 22.736V22.472H180.022L181.342 22.52L181.726 22.448L181.798 22.424L182.374 22.616H183.502ZM185.362 30.896L186.226 32.456L187.33 33.488L187.138 33.92L188.962 36.752L189.01 37.04L189.826 38.312L190.642 37.784L191.89 36.752L191.338 35.864L190.09 34.232L188.986 32.36L188.098 30.992L187.882 30.512L187.546 30.176L187.306 29.72L186.946 29.024L187.258 28.448L187.714 27.632L188.506 26.384L189.946 24.248L190.066 23.6L190.474 23.336L191.146 22.4L191.818 21.2L190.018 20L189.178 20.984L189.154 21.176L187.81 23.384V23.48L187.21 24.44V25.016L186.346 25.856L184.786 28.496L184.81 30.032L185.362 30.896ZM198.12 20.384L197.016 20.456C196.68 20.456 196.368 20.456 196.008 20.432C195.816 20.432 195.6 20.6 195.456 20.6L195 20.408L192.672 20.288L192.6 22.256L192.888 22.544L194.352 22.496C194.424 22.496 194.568 22.472 194.736 22.424L194.856 22.304L195.384 22.376L195.528 23.36L195.432 24.896L195.576 26.024L195.456 30.92L195.336 34.304L195.552 34.544L195.192 36.056V37.904L196.464 38.096L197.136 37.976L197.832 37.592L197.64 35.888V31.376L197.352 30.92L197.376 30.896L197.592 29.456L197.568 27.608V27.2C197.568 27.032 197.544 26.816 197.544 26.624C197.52 26.48 197.52 25.88 197.52 25.664L197.568 23.888L197.472 23.36L197.616 22.352H198.36L199.08 22.4L199.32 22.472H200.4L200.472 21.344L200.328 20.336L198.12 20.384Z" fill="currentColor" style="--darkreader-inline-fill: currentColor;" data-darkreader-inline-fill=""></path>
+</svg>
+
+</a>
+        </div>
+
+      </div>
+      <div class="hidden md:ml-6 md:flex sm:items-center">
+          <div class="hidden md:ml-6 md:flex sm:space-x-8">
+            <a class="border-transparent text-gray-500 dark:text-gray-300 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-md font-semibold " data-test-id="nav-all-paths" href="https://www.theodinproject.com/paths">All Paths</a>
+
+            <a class="border-transparent text-gray-500 dark:text-gray-300 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-md font-semibold " data-test-id="nav-about" href="https://www.theodinproject.com/about">About</a>
+
+            <a class="border-transparent text-gray-500 dark:text-gray-300 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-md font-semibold " data-test-id="nav-community" href="https://discord.gg/fbFCkYabZB">Community</a>
+
+            <a class="border-transparent text-gray-500 dark:text-gray-300 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-md font-semibold " data-test-id="nav-sign-in" href="https://www.theodinproject.com/sign_in">Sign in</a>
+
+          <a class="button button--primary md:px-2 md:py-2 lg:px-4 text-sm" data-test-id="nav-sign-up" href="https://www.theodinproject.com/sign_up">Get Started</a>
+          <turbo-frame class="flex items-center justify-center" id="theme_switcher">
+            <a class="text-gray-700 group flex items-center text-sm dark:text-gray-300 py-2 px-3" data-turbo="true" data-turbo-method="put" data-turbo-frame="_top" data-controller="theme--switcher" data-theme--switcher-current-theme-value="light" data-theme--switcher-other-theme-value="dark" data-action="click-&gt;theme--switcher#toggle" href="https://www.theodinproject.com/themes?theme=dark">
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 h-5 w-5 text-gray-400 group-hover:text-gray-500 dark:text-gray-300 dark:group-hover:text-gray-400 text-gray-500 group-hover:text-gray-700" role="img" aria-labelledby="a7tlff8hvbzd8ga6fo5yl7dk3vjrz58s" style="--darkreader-inline-stroke: currentColor;" data-darkreader-inline-stroke=""><title id="a7tlff8hvbzd8ga6fo5yl7dk3vjrz58s">theme icon</title>
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"></path>
+</svg>
+
+  
+</a>
+</turbo-frame>        </div>
+
+      </div>
+
+      <div class="-mr-2 flex items-center md:hidden">
+        <button type="button" data-controller="custom-events" data-action="custom-events#emit" data-custom-events-event-name-value="openMobileMenu" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 dark:text-gray-300 dark:hover:text-gray-200 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gold-500" aria-controls="mobile-menu" aria-expanded="false">
+          <span class="sr-only">Open mobile menu</span>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 block h-6 w-6" role="img" aria-labelledby="as85xjrug9ozh0o7bu1a48mtfpe84mrf" style="--darkreader-inline-stroke: currentColor;" data-darkreader-inline-stroke=""><title id="as85xjrug9ozh0o7bu1a48mtfpe84mrf">Open mobile menu button</title>
+  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+</svg>
+
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+    
+
+    
+
+<div class="bg-white dark:bg-gray-900">
+  <div class="page-container">
+
+    <header class="mb-16 grid grid-cols-12">
+  <div class="flex space-y-4 items-center flex-col col-span-full justify-center xl:space-x-4 xl:flex-row xl:justify-start xl:col-start-2">
+      <a href="https://www.theodinproject.com/paths/foundations/courses/foundations">
+    <div class="shadow-md rounded-full flex h-24 w-24 sm:h-28 sm:w-28" data-test-id="default-badge">
+      <img alt="Foundations badge" class="p-2.5" src="Project%20Landing%20Page%20The%20Odin%20Project_files/badge-foundations-21a2e04cbb0f20e4420bf13cd6593813ea6f97b082.svg">
+    </div>
+</a>
+
+    <div class="text-center xl:text-left">
+      <h1 class="text-2xl font-bold capitalize text-gray-700 dark:text-gray-300 min-w-full" data-test-id="lesson-title-header">
+        Project: Landing Page
+      </h1>
+
+      <a class="no-underline" href="https://www.theodinproject.com/paths/foundations/courses/foundations">
+        <h2 class="min-w-full text-lg text-gray-500 dark:text-gray-400" data-test-id="course-title-header">
+          Foundations Course
+        </h2>
+</a>    </div>
+  </div>
+</header>
+
+
+    <main class="grid grid-cols-12 gap-x-6" data-controller="lesson-toc" data-lesson-toc-item-classes-value="no-underline hover:text-gray-800 text-sm dark:hover:text-gray-300">
+      <article class="col-span-full xl:col-span-7 xl:col-start-2">
+         <div class="lesson-content max-w-prose mx-auto prose prose-lg prose-gray prose-a:text-gold-600 prose-code:bg-gray-100 prose-code:p-1 prose-code:font-normal dark:prose-code:bg-gray-700/40 prose-code:rounded-md break-words line-numbers dark:prose-invert dark:antialiased prose-pre:rounded-xl prose-pre:bg-slate-800 prose-pre:shadow-lg dark:prose-pre:bg-slate-800/70 dark:prose-pre:shadow-none dark:prose-pre:ring-1 dark:prose-pre:ring-slate-300/10 xl:mx-0" data-controller="syntax-highlighting" data-lesson-toc-target="lessonContent">
+  
+          <section id="introduction">
+  <h3><a href="#introduction" class="anchor-link">Introduction</a></h3>
+
+  <p>For this project you’ll be creating an entire web page from a 
+design we’ll provide for you. If you’ve been following along you should 
+have the skills you need to accomplish this, but it may not be easy!</p>
+
+  <p>The design we’re providing you comes in the form of 2 images: one 
+is an image of the complete website, and one has some details about some
+ of the fonts and colors we’ve used.</p>
+
+  <p>Do <em>not</em> be afraid to use google or go back to previous lessons to look something up. <strong>Real-life, professional developers use google <em>constantly</em> for things that they have been doing for years.</strong>
+ At this point it is not expected that you will have everything 
+memorized, so don’t worry about it. Additionally, there are a few small 
+details that you may not have encountered in our lessons yet. <em>This is by design.</em> These details are minor, and easily searched (e.g. google <code>css rounded corners</code>).</p>
+
+  <p>Get your project as close as you can to the design, but do not 
+worry about getting it pixel-perfect. Don’t get out your ruler or count 
+pixels to find the exact margins between the various sections. The point
+ of this assignment is to create something from scratch and get the 
+various elements in more or less the right position relative to the 
+rest. It doesn’t matter if you use <code>margin: 24px</code> when the design actually has <code>margin: 48px</code>.</p>
+
+  <p><em>Finally</em>, feel free to substitute your own content into 
+this design. The images have some meaningless dummy content, but if you 
+want to make up a business and personalize this page, please feel free 
+to do so! Insert actual images in the placeholders, and feel free to 
+play with the colors and fonts a bit too.</p>
+
+  <div class="lesson-note">
+
+    <h4 id="a-note-about-images-on-the-web">A note about images on the web</h4>
+
+    <p>You do not have the legal right to use just any image that you 
+find on the web. There are many free images to be found, but make sure 
+that the image   you use is actually free for you to use, and make sure 
+to credit the creator of the image in your project. An easy way to give 
+credit is to put the creator’s name and contact info in a README file in
+ your repository.</p>
+
+    <p>Some good places to find free-to-use images on the web include <a href="https://www.pexels.com/" target="_blank" rel="noopener noreferrer">Pexels</a>, <a href="https://pixabay.com/" target="_blank" rel="noopener noreferrer">Pixabay</a>, and <a href="https://unsplash.com/" target="_blank" rel="noopener noreferrer">Unsplash</a>.</p>
+
+  </div>
+
+</section>
+<section id="setting-up-your-projects-github-repository">
+  <h3><a href="#setting-up-your-projects-github-repository" class="anchor-link">Setting Up Your Project’s GitHub Repository</a></h3>
+
+  <p>As we did in the Recipes project, go ahead and set up a git 
+repository before beginning work on this project. Git and GitHub are 
+going to act as a portfolio for you moving forward, so you need to keep 
+everything in there! Look back at the <a href="https://www.theodinproject.com/lessons/foundations-recipes" target="_blank" rel="noopener noreferrer">Recipes project</a> if you need a reminder on how to set it up.</p>
+
+</section>
+<section id="warning-about-looking-at-other-peoples-finished-project-code-before-you-have-completed-your-own">
+  <h3><a href="#warning-about-looking-at-other-peoples-finished-project-code-before-you-have-completed-your-own" class="anchor-link">Warning About Looking at Other People’s Finished Project Code Before You Have Completed Your Own</a></h3>
+
+  <p>All of our projects have a “Student Solutions” section at the 
+bottom for people to post their completed code and live websites for the
+ projects. These are here for you both to compare your completed code 
+with and see what other routes people have chosen to take with their 
+project code and designs.</p>
+
+  <p>We know it may be tempting to look at the solutions when you get stuck or don’t know where to start, but <strong>don’t</strong> do it! Here are some reasons why:</p>
+
+  <ul>
+    <li>All of the submitted projects are <em>other learners’</em> 
+solutions. This means they are written by other people who are also 
+still learning and may not necessarily be representative of “best 
+practice” or high quality code.</li>
+    <li>Looking at solutions robs you of the chance to develop your 
+problem solving and researching skills. In the real world, there will 
+not always be “solutions” for you to look at, and you will have to come 
+up with your own.</li>
+    <li>There are many different ways to achieve the same end result - it is not “one size fits all.”</li>
+    <li>An Analogy: “Learning how to code from looking at completed code
+ is like learning how to make pizza dough from looking at a baked 
+pizza.”  There is a lot more that goes into it than you might assume 
+from only seeing the final product and not the process that led to it.</li>
+  </ul>
+
+  <p>Once you have completed your project, feel free to look at the 
+other solutions to see alternative ways the project was completed.</p>
+
+  <p><strong>DO NOT PEEK. Come ask for help in our discord server!</strong></p>
+
+</section>
+<section id="assignment">
+  <h3><a href="#assignment" class="anchor-link">Assignment</a></h3>
+
+  <div class="lesson-content__panel">
+    <p>Don’t forget to commit early &amp; often! You can <a href="https://www.theodinproject.com/paths/foundations/courses/foundations/lessons/commit-messages" target="_blank" rel="noopener noreferrer">reference the Commit Message lesson here</a>!</p>
+
+    <ol>
+      <li>Download the design images and take a look at what you’re going to be creating here. <a href="https://cdn.statically.io/gh/TheOdinProject/curriculum/81a5d553f4073e593d23a6ab00d50eef8620796d/foundations/html_css/project/imgs/01.png" target="_blank" rel="noopener noreferrer">Image One (Full Design)</a>, <a href="https://cdn.statically.io/gh/TheOdinProject/curriculum/81a5d553f4073e593d23a6ab00d50eef8620796d/foundations/html_css/project/imgs/02.png" target="_blank" rel="noopener noreferrer">Image Two (Color and Fonts)</a>
+        <ol>
+          <li>The font that’s being used in the images is roboto.</li>
+          <li>Hero text is the statement that appears at the top of a web page.</li>
+        </ol>
+      </li>
+      <li>There are many ways to tackle a project like this, and it can 
+be overwhelming to look at a blank HTML document and not know where to 
+start. Our suggestion: take it one section at a time. The website you’re
+ creating has 4 main sections (and a footer), so pick one and get it 
+into pretty good shape before moving on. Starting at the top is always a
+ solid plan.</li>
+      <li>For the section you’re working on, begin by getting all the 
+content onto the page before beginning to style it. In other words, do 
+the HTML and <em>then</em> do the CSS. You’ll probably have to go back 
+to the HTML once you start styling, but bouncing back and forth from the
+ beginning will take more time and may cause more frustration. (Note: 
+you don’t need to use more than one stylesheet. Using only one CSS file 
+is adequate for this project).</li>
+      <li>Many of the elements on this page are very similar to things 
+you saw in our flexbox exercises… feel free to go back to those if you 
+need a refresher.</li>
+      <li>Do not worry about making your project look nice on a mobile device. We’ll learn that later.</li>
+      <li>When you finish, don’t forget to push it up to GitHub!</li>
+    </ol>
+  </div>
+
+</section>
+<section id="viewing-your-project-on-the-web">
+  <h3><a href="#viewing-your-project-on-the-web" class="anchor-link">Viewing Your Project on the Web</a></h3>
+
+  <p>If you want to show your work (the project) to others, or submit a 
+solution below, you will need to publish your site so that others can 
+access it from the web, rather than just on your local machine. The good
+ news is that if you have your project on GitHub (as described above), 
+doing this is incredibly simple.</p>
+
+  <p>GitHub allows you to publish web projects directly from a GitHub 
+repository. Doing this will allow you to access your project from <code>your-github-username.github.io/your-github-repo-name</code></p>
+
+  <p>There are a couple of ways to go about publishing your project, but the simplest is the following:</p>
+
+  <ul>
+    <li>Make sure that the main HTML file of your project is called <code>index.html</code>. If it is not, you need to rename it.</li>
+    <li>Go to your GitHub repo on the web and click the <strong>Settings</strong> button as shown in the screenshot below.
+  <a href="https://cdn.statically.io/gh/TheOdinProject/curriculum/81a5d553f4073e593d23a6ab00d50eef8620796d/foundations/html_css/project/imgs/03.png" target="_blank" rel="noopener noreferrer"><img src="Project%20Landing%20Page%20The%20Odin%20Project_files/03.png" alt="Screenshot pointing to the Settings located in an example repository"></a></li>
+    <li>Click on <strong>Pages</strong> on the left side bar.</li>
+    <li>Change the <strong>Source</strong> from <em>none</em> to <em>main branch</em> and click Save.</li>
+    <li>It may take a few minutes (the GitHub website says up to 10), but your project should be accessible over the web from <code>your-github-username.github.io/your-github-repo-name</code> (obviously substituting your own details in the link).</li>
+  </ul>
+
+</section>
+
+
+ </div>
+      </article>
+
+      <aside class="col-span-3 col-start-10 justify-self-end hidden xl:block">
+        <div class="sticky top-12 pb-20">
+          <h4 class="text-md pb-4 text-gray-700 dark:text-gray-300">Lesson contents</h4>
+          <ul class="flex flex-col text-gray-500 dark:text-gray-400" data-lesson-toc-target="toc"><li class="p-2 pl-4"><a class="no-underline hover:text-gray-800 text-sm dark:hover:text-gray-300" href="#introduction">Introduction</a></li><li class="p-2 pl-4"><a class="no-underline hover:text-gray-800 text-sm dark:hover:text-gray-300" href="#setting-up-your-projects-github-repository">Setting Up Your Project’s GitHub Repository</a></li><li class="p-2 pl-4"><a class="no-underline hover:text-gray-800 text-sm dark:hover:text-gray-300" href="#warning-about-looking-at-other-peoples-finished-project-code-before-you-have-completed-your-own">Warning About Looking at Other People’s Finished Project Code Before You Have Completed Your Own</a></li><li class="p-2 pl-4"><a class="no-underline hover:text-gray-800 text-sm dark:hover:text-gray-300" href="#assignment">Assignment</a></li><li class="p-2 pl-4 toc-item-active"><a class="no-underline hover:text-gray-800 text-sm dark:hover:text-gray-300" href="#viewing-your-project-on-the-web">Viewing Your Project on the Web</a></li></ul>
+        </div>
+      </aside>
+    </main>
+  </div>
+</div>
+
+<div class="bg-gray-100 dark:bg-gray-800/30 text-center">
+  <div class="page-container">
+
+    <div class="bg-white shadow rounded-lg dark:bg-gray-800 dark:ring-1 dark:ring-white/10 dark:ring-inset ">
+  
+  <div class="p-8 ">
+            <p class="mb-7">
+            Please <a class="text-gold" href="https://www.theodinproject.com/sign_in">Sign in</a> or <a class="text-gold" data-test-id="sign_up" href="https://www.theodinproject.com/sign_up">Sign up</a> to view user submissions for this project!
+          </p>
+
+        <div class="flex flex-col justify-center max-w-sm mx-auto space-y-6 md:max-w-full md:space-y-0 md:flex-row md:space-x-7">
+  <a class="button button--secondary" data-test-id="view-course-btn" href="https://www.theodinproject.com/paths/foundations/courses/foundations">
+    <i class=" pr-2 text-lg far fa-map"></i>View Course
+</a>
+    <a class="button button--primary" data-test-id="sign_in_button" href="https://www.theodinproject.com/sign_in">Sign in to track progress</a>
+
+    <a class="button button--secondary" data-test-id="next-lesson-btn" href="https://www.theodinproject.com/lessons/foundations-fundamentals-part-1">
+      <i class="pr-2 text-lg far fa-arrow-alt-circle-right" aria-hidden="true"></i>Next Lesson
+</a></div>
+
+
+</div>
+
+  
+</div>
+
+    <a target="_blank" rel="noreferrer noopener" class="text-gold text-lg block mt-14" href="https://github.com/TheOdinProject/curriculum/edit/main/foundations/html_css/project/html-css-foundations-project.md">
+      <span class="fab fa-github mr-1"></span>
+      <span> Improve this lesson on GitHub</span>
+</a>
+    <div class="py-20 text-center max-w-4xl mx-auto">
+  <h4 class="text-3xl mb-4 font-light leading-10 text-gray-600 dark:text-gray-200">Have a question?</h4>
+  <p class="font-normal mb-10">Chat with our friendly Odin community in our Discord chatrooms!</p>
+  <a class="button button--secondary" target="_blank" rel="noreferrer" href="https://discord.gg/fbFCkYabZB">Open Discord</a>
+</div>
+
+
+    <div class="bg-white shadow rounded-lg dark:bg-gray-800 dark:ring-1 dark:ring-white/10 dark:ring-inset ">
+  <div class="p-8 pb-0 ">
+      <div class="flex justify-between gap-x-16 items-center border-b-2 border-gray-200 pb-6 flex-col space-y-6 md:flex-row md:space-y-0">
+      <h2 class="text-2xl text-gray-500 dark:text-gray-300 text-center w-2/3 md:text-left">
+        Are you interested in accelerating your web development learning experience?
+      </h2>
+      <a class="button button--primary" href="https://www.thinkful.com/?utm_source=odin&amp;utm_medium=cpc&amp;utm_campaign=odin-homepage&amp;utm_content=web-dev-3-icons">
+        Get started
+</a>    </div>
+
+ </div>
+
+  <div class="p-8 flex justify-between flex-col items-center space-y-6 lg:space-y-0 lg:flex-row">
+      <a href="https://www.thinkful.com/?utm_source=odin&amp;utm_medium=cpc&amp;utm_campaign=odin-homepage&amp;utm_content=tf-logo" alt="Thinkful" class="text-gray-800 dark:text-gray-300">
+      <div class="flex items-center space-x-4">
+        <img alt="Thinkful Logo" class="w-14 h-14" src="Project%20Landing%20Page%20The%20Odin%20Project_files/thinkful-logo-b82fbfcec7075b71956a786a15683fd87df7efe335429c.svg">
+        <h2 class="text-2xl font-bold">Thinkful</h2>
+      </div>
+    </a>
+
+    <ul class="flex items-center space-y-10 flex-col md:flex-row md:space-y-0 md:space-x-10">
+      <li class="flex items-center flex-col">
+        <img alt="5-6 months" class="h-10" src="Project%20Landing%20Page%20The%20Odin%20Project_files/icon-calendar-9c662a21b5e82d39bb7e3e5161cc05ed9dbf9f0f178ed5.svg">
+        <p class="font-bold text-gray-800 dark:text-gray-300">5-6 months</p>
+      </li>
+
+      <li class="flex items-center flex-col">
+        <img alt="Job Guarantee" class="h-10" src="Project%20Landing%20Page%20The%20Odin%20Project_files/icon-guarantee-047f6434b566fba5814aae8aa8cb7c7e3c26ad7ec996c.svg">
+        <p class="font-bold text-gray-800 dark:text-gray-300">Job Guarantee</p>
+      </li>
+
+      <li class="flex items-center flex-col">
+        <img alt="1-on-1 Mentorship" class="h-10" src="Project%20Landing%20Page%20The%20Odin%20Project_files/icon-mentor-1a98bfba6144856bdce308fe83cbfe0831429e79f5f3f6c4.svg">
+        <p class="font-bold text-gray-800 dark:text-gray-300">1-on-1 Mentorship</p>
+      </li>
+    </ul>
+
+</div>
+
+  
+</div>
+
+  </div>
+</div>
+
+
+    <footer class="bg-white dark:bg-gray-800">
+  <div class="max-w-7xl px-4 sm:px-6 lg:px-8 py-3 mx-auto">
+    <div class="flex justify-center lg:justify-between py-8">
+      <div class="w-80">
+        <div class="flex-shrink-0 hidden lg:block items-center">
+          <a href="https://www.theodinproject.com/">
+  <svg xmlns="http://www.w3.org/2000/svg" width="205" height="59" viewBox="0 0 205 59" fill="none" role="img" aria-labelledby="aotvods1jijbmlsxl0opmy3cm3ii689s" class="block h-15 w-auto text-gray-800 dark:text-gray-300"><title id="aotvods1jijbmlsxl0opmy3cm3ii689s">Odin Logo</title>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.68945 34.7331L13.1482 19.2902H30.9833L35.442 34.7331H8.68945Z" fill="#EED9C3" style="--darkreader-inline-fill: #e8cbad;" data-darkreader-inline-fill=""></path>
+<ellipse cx="27.7849" cy="27.1223" rx="1.26005" ry="1.24284" fill="#353535" style="--darkreader-inline-fill: #c7c2ba;" data-darkreader-inline-fill=""></ellipse>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M19.446 25.7092C19.446 25.2752 19.0891 24.9233 18.6493 24.9233C17.638 24.9233 15.9034 24.9233 14.8922 24.9233C14.4523 24.9233 14.0955 25.2752 14.0955 25.7092C14.0955 26.3856 14.0955 27.3716 14.0955 28.1426C14.0955 28.7935 14.6305 29.3212 15.2902 29.3212C15.6995 29.3212 16.1763 29.3212 16.6578 29.3212C17.3973 29.3212 18.1062 29.0314 18.6295 28.5155C19.1522 28.0001 19.446 27.3004 19.446 26.5712C19.446 26.2585 19.446 25.9621 19.446 25.7092Z" fill="#A78347" style="--darkreader-inline-fill: #be9d66;" data-darkreader-inline-fill=""></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M35.0004 4.5308L43.8517 0L39.0002 18L35.0002 22L35.0004 4.5308Z" fill="#E3B261" style="--darkreader-inline-fill: #e4b465;" data-darkreader-inline-fill=""></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.8514 4.5308L0.000132561 0L4.85156 18L8.85156 22L8.8514 4.5308Z" fill="#E3B261" style="--darkreader-inline-fill: #e4b465;" data-darkreader-inline-fill=""></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M35.442 12.7438C35.442 12.7438 28.7539 8.34589 22.0657 8.34589C15.3776 8.34589 8.68945 12.7438 8.68945 12.7438V25.9373L10.473 29.4556C11.7527 24.5929 17.5445 22.5672 21.576 25.5723L22.0657 25.9373L22.5554 25.5723C26.587 22.5672 32.3788 24.5929 33.6585 29.4556L35.442 25.9373V12.7438Z" fill="#E3B261" style="--darkreader-inline-fill: #e4b465;" data-darkreader-inline-fill=""></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M17.6068 32.5341L14.0398 53.2041L9.12134 49.6858L13.148 34.7331L17.6068 32.5341Z" fill="#D4D4D4" style="--darkreader-inline-fill: #cdc8c2;" data-darkreader-inline-fill=""></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M26.5243 32.5341L30.0913 53.2041L35.0098 49.6858L30.9831 34.7331L26.5243 32.5341Z" fill="#D5D5D5" style="--darkreader-inline-fill: #cdc9c3;" data-darkreader-inline-fill=""></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.68933 25.9373L5.12231 39.1309L9.58108 47.9267L13.1481 34.7331L8.68933 25.9373Z" fill="#E6E6E6" style="--darkreader-inline-fill: #d8d5d0;" data-darkreader-inline-fill=""></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M35.4418 25.9373L39.0088 39.1309L34.55 47.9267L30.983 34.7331L35.4418 25.9373Z" fill="#E6E6E6" style="--darkreader-inline-fill: #d8d5d0;" data-darkreader-inline-fill=""></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M17.6069 32.5341L13.594 54.0837L22.0656 58.4815L30.5373 54.0837L26.5244 32.5341L22.3983 30.4992L22.0656 30.3352L17.6069 32.5341Z" fill="#E6E6E6" style="--darkreader-inline-fill: #d8d5d0;" data-darkreader-inline-fill=""></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M23.6636 33.4137H20.5425C20.5425 33.4137 20.5425 33.9348 20.5425 34.514C20.5425 34.9222 20.707 35.3131 20.9995 35.6016C21.292 35.8901 21.6884 36.0524 22.1022 36.0524C22.1026 36.0524 22.1035 36.0524 22.1039 36.0524C22.5177 36.0524 22.9141 35.8901 23.2066 35.6016C23.4991 35.3131 23.6636 34.9222 23.6636 34.514C23.6636 33.9348 23.6636 33.4137 23.6636 33.4137Z" fill="#353535" style="--darkreader-inline-fill: #c7c2ba;" data-darkreader-inline-fill=""></path>
+<path d="M68.808 20.384L67.704 20.456C67.368 20.456 67.056 20.456 66.696 20.432C66.504 20.432 66.288 20.6 66.144 20.6L65.688 20.408L63.36 20.288L63.288 22.256L63.576 22.544L65.04 22.496C65.112 22.496 65.256 22.472 65.424 22.424L65.544 22.304L66.072 22.376L66.216 23.36L66.12 24.896L66.264 26.024L66.144 30.92L66.024 34.304L66.24 34.544L65.88 36.056V37.904L67.152 38.096L67.824 37.976L68.52 37.592L68.328 35.888V31.376L68.04 30.92L68.064 30.896L68.28 29.456L68.256 27.608V27.2C68.256 27.032 68.232 26.816 68.232 26.624C68.208 26.48 68.208 25.88 68.208 25.664L68.256 23.888L68.16 23.36L68.304 22.352H69.048L69.768 22.4L70.008 22.472H71.088L71.16 21.344L71.016 20.336L68.808 20.384ZM73.2638 33.992L73.3118 35.504L73.6478 35.864L73.2638 36.32L73.1918 37.928L74.7038 38.072L75.6878 38.024L75.7118 37.136L75.6398 36.056L75.4958 34.784L75.5198 34.712L75.6398 30.536L77.5118 29.744H77.5358L78.9278 29.432L78.9038 29.864L78.9758 30.2L78.9278 33.896L79.2878 34.28L79.0478 34.496L78.8798 37.184L79.1918 38.024H80.5838L81.4718 37.976L81.4238 36.656L81.2558 36.056L81.2078 32.984L81.1598 28.688L81.1118 28.208L81.0398 27.128L81.1598 24.872L80.9438 24.176L81.1838 23.864L81.2078 22.952V22.976L81.3518 21.608L81.4238 20.408L80.0558 20.36L79.1678 20.336L78.8078 21.032L78.9278 21.992L78.9758 24.152L79.0478 26.336L78.9518 26.984L78.6878 27.104L78.2318 27.32L77.2478 27.752L77.0318 28.016L76.6478 27.872L75.6398 28.232L75.5918 28.256L75.3758 25.928L75.4718 24.344L75.2078 24.128L75.4958 23.672L75.6158 22.208L75.7118 20.48L73.6478 20.216L73.0718 20.6L73.2398 22.088L73.1678 22.568L73.2398 24.152L73.4078 25.64L73.3118 27.992L73.4798 30.704L73.2638 33.992ZM90.8258 22.616L90.8738 21.272L90.8498 20.336L88.4738 20.36L87.5378 20.552L87.2018 20.36H85.8338L84.7058 20.504L84.8258 22.208L85.0898 22.52L84.8258 22.928L84.8498 24.152L84.8258 26.024V27.8L84.7538 28.688L84.9458 31.064L84.8498 31.256L84.8738 32.552V33.104L85.0898 33.392L84.8018 34.016L84.7778 35.12L84.8018 35.384L84.6578 37.016L84.7778 38L86.5778 38.024L86.7698 37.904H87.6098L88.9778 38.048L90.5618 38.072L91.1138 37.832L91.2098 36.944L91.2578 35.744L90.0578 35.72L89.4578 35.912L87.5378 35.936L87.3458 35.888L87.1298 35.84L87.0818 33.512L87.0578 33.464L87.1298 33.248L86.9858 32.552L87.0818 30.08H87.4658L88.9778 30.128L90.1538 30.176L90.2018 29.192L90.3458 28.472L90.0338 27.872L88.8098 27.992L87.8738 28.04L86.9858 27.992L86.9378 27.056L86.6978 26.864L86.9618 26.432L87.0818 25.712V23.336L87.1298 22.736V22.472H87.3458L88.6658 22.52L89.0498 22.448L89.1218 22.424L89.6978 22.616H90.8258ZM102.331 20.312L102.115 20.336H101.227L101.179 20.504L101.035 21.224L100.939 21.368L99.6429 24.608L99.7629 24.872L99.3309 25.184L98.0349 28.328L97.8429 28.448L97.8909 29.96L98.4669 31.184L99.3309 33.224L100.051 34.712H100.315L100.243 35.12L101.083 37.208L101.107 38L103.291 38.024L103.339 37.76L103.627 36.992L104.923 33.92L105.475 32.768L105.499 32.384L105.691 32.144L106.867 29.768L106.939 28.448L106.123 26.672L105.475 25.232H105.235L105.115 24.584L103.891 21.584L103.411 20.264L102.331 20.312ZM102.379 34.952L101.323 32.192L100.843 31.208L100.363 30.872L100.603 30.584L100.387 29.888L100.075 29.096L100.051 28.808L100.843 26.744L100.675 26.36L101.011 26.264L102.331 22.784L102.475 23.24L103.027 24.704L103.459 24.968L103.243 25.256L104.179 27.68L104.467 28.496L104.659 29.096L103.483 31.976L103.507 32.408H103.531L103.243 32.696L102.475 35.216L102.379 34.952ZM113.227 35.72L114.067 34.016L116.539 30.224L116.971 29.504L116.947 27.752L116.515 27.2L116.539 27.248L114.715 24.824L114.091 23.72L113.251 22.88L112.987 22.088L111.499 20.048L110.227 20.432L109.195 20.744L109.219 21.632L109.291 22.88L109.531 23.192L109.291 23.648L109.315 29.936L109.459 30.872L109.315 36.248V36.224L109.267 37.832L110.827 38.048L111.619 38.264L113.227 35.72ZM111.451 26.744L111.379 23.264L111.523 23.432L113.899 27.248L114.379 27.632L114.475 28.208L114.907 28.856L114.475 29.552L113.683 30.872L112.675 32.816L112.867 33.032L112.435 33.248L111.379 34.952L111.355 35L111.379 33.704L111.475 28.952L111.091 27.824L111.451 26.744ZM119.431 27.56L119.359 28.88L119.287 29.624V34.112V34.976L119.575 35.384L119.287 35.864L118.951 38L120.055 38.024L120.559 38.048L121.615 37.712L121.639 36.824L121.591 36.368L121.543 36.008V29.36L121.279 29.192L121.495 28.688L121.447 28.088L121.351 27.152L121.423 25.928L121.495 22.784L121.615 22.184L121.735 20.432L120.175 20.336L119.047 20.408L119.167 21.608L119.383 21.728L119.191 22.16L119.263 26.96L119.431 27.56ZM133.115 35.888V35.12L132.947 29.864L132.683 29.072L132.875 28.064L133.115 22.16L133.163 20.528L132.179 20.36L130.787 20.384V22.304L131.027 22.64L130.787 23.384V25.448L129.995 24.152L129.803 24.056L129.203 23.096L127.043 20.12L125.147 20.648V21.896L125.243 24.392L125.339 25.76L125.243 30.752L125.459 31.232L125.267 31.928L125.123 35.336V35.744L125.195 35.96L125.027 37.88L126.059 38.072L127.475 38.024L127.523 36.488L127.451 36.152L127.475 33.656L127.259 32.744L127.379 31.88L127.427 26.408L127.139 26.096L127.115 26.048L127.451 25.184V23.888L128.075 24.752L129.059 26.12L129.755 26.96L130.091 27.488L130.427 27.848L130.811 28.496L130.835 30.992L130.907 31.448L130.835 31.568L130.811 33.872L130.835 36.152L130.811 38.024L131.627 38.072L132.947 38.048L133.259 37.232L133.115 35.888ZM147.393 28.76L148.161 28.016L148.905 27.104L148.953 25.448L146.457 22.808L145.953 22.64L145.857 22.232L143.697 20L142.929 20.288L141.777 20.792L141.825 22.4L141.945 23.384V27.32L141.897 27.44L141.873 33.44L142.161 33.752L141.945 34.496L141.681 37.928L143.073 38.072L144.273 38L144.129 35.024L143.745 34.688L144.129 34.112L144.081 32.456L144.297 32.216L145.905 30.392L147.393 28.76ZM144.105 27.128L143.841 26.648L144.081 25.904L144.057 24.752L144.081 23.048L145.473 24.608L145.689 24.752L145.857 25.088L146.889 26.24L146.505 26.792L146.265 27.392L146.001 27.32L144.801 28.736L144.105 29.48V27.128ZM153.466 30.608L154.426 32.552L154.642 33.104L155.53 34.784L155.818 34.928L155.794 35.336L156.634 37.256L157.21 38.192L159.154 37.112L159.178 36.416L158.386 35.576L157.954 34.664V34.688L157.618 33.992L157.474 33.92V33.608L156.514 31.976C156.346 31.736 156.202 31.616 156.01 31.4V30.992C155.866 30.704 155.578 30.296 155.41 29.96L156.082 29.048L156.49 28.544L157.258 27.632L158.362 26.288L158.53 24.848L157.378 23.792C157.354 23.792 156.97 23.912 156.946 23.888L156.802 23.288L152.986 19.976L151.09 20.744L151.186 22.808L151.306 27.392L151.114 27.872L151.162 29.12L151.258 31.928V32.864L151.474 33.176L151.114 34.112L150.97 37.928L152.554 38.072L153.514 37.688L153.49 35.696L153.418 35.48L153.346 33.08L153.322 30.464L153.466 30.608ZM153.37 28.352L153.274 26.216L153.226 25.952L153.178 25.808L153.082 25.376L153.274 24.92V24.68L153.322 22.832L155.53 25.016L155.698 25.136L156.178 25.736L155.914 26.072C155.602 26.504 155.026 27.248 154.69 27.656L153.49 29.144L153.322 29.24L153.37 28.352ZM164.323 20.312L164.107 20.336H163.219L163.171 20.504L163.027 21.224L162.931 21.368L161.635 24.608L161.755 24.872L161.323 25.184L160.027 28.328L159.835 28.448L159.883 29.96L160.459 31.184L161.323 33.224L162.043 34.712H162.307L162.235 35.12L163.075 37.208L163.099 38L165.283 38.024L165.331 37.76L165.619 36.992L166.915 33.92L167.467 32.768L167.491 32.384L167.683 32.144L168.859 29.768L168.931 28.448L168.115 26.672L167.467 25.232H167.227L167.107 24.584L165.883 21.584L165.403 20.264L164.323 20.312ZM164.371 34.952L163.315 32.192L162.835 31.208L162.355 30.872L162.595 30.584L162.379 29.888L162.067 29.096L162.043 28.808L162.835 26.744L162.667 26.36L163.003 26.264L164.323 22.784L164.467 23.24L165.019 24.704L165.451 24.968L165.235 25.256L166.171 27.68L166.459 28.496L166.651 29.096L165.475 31.976L165.499 32.408H165.523L165.235 32.696L164.467 35.216L164.371 34.952ZM171.71 27.608L171.59 28.928L171.614 30.416L171.638 30.752V31.688L171.542 34.304L171.59 34.52L171.23 35.024L170.174 35.72L169.118 36.152V37.4L170.438 38.384L172.214 36.944L172.19 36.464L172.838 36.368L173.606 35.696L173.99 35.024L173.702 30.896L173.51 30.176L173.774 29.984L173.678 23.288L173.966 21.176L173.654 20.336L171.374 20.384V21.728L171.806 21.968L171.494 22.352L171.566 26.408L171.71 27.608ZM183.502 22.616L183.55 21.272L183.526 20.336L181.15 20.36L180.214 20.552L179.878 20.36H178.51L177.382 20.504L177.502 22.208L177.766 22.52L177.502 22.928L177.526 24.152L177.502 26.024V27.8L177.43 28.688L177.622 31.064L177.526 31.256L177.55 32.552V33.104L177.766 33.392L177.478 34.016L177.454 35.12L177.478 35.384L177.334 37.016L177.454 38L179.254 38.024L179.446 37.904H180.286L181.654 38.048L183.238 38.072L183.79 37.832L183.886 36.944L183.934 35.744L182.734 35.72L182.134 35.912L180.214 35.936L180.022 35.888L179.806 35.84L179.758 33.512L179.734 33.464L179.806 33.248L179.662 32.552L179.758 30.08H180.142L181.654 30.128L182.83 30.176L182.878 29.192L183.022 28.472L182.71 27.872L181.486 27.992L180.55 28.04L179.662 27.992L179.614 27.056L179.374 26.864L179.638 26.432L179.758 25.712V23.336L179.806 22.736V22.472H180.022L181.342 22.52L181.726 22.448L181.798 22.424L182.374 22.616H183.502ZM185.362 30.896L186.226 32.456L187.33 33.488L187.138 33.92L188.962 36.752L189.01 37.04L189.826 38.312L190.642 37.784L191.89 36.752L191.338 35.864L190.09 34.232L188.986 32.36L188.098 30.992L187.882 30.512L187.546 30.176L187.306 29.72L186.946 29.024L187.258 28.448L187.714 27.632L188.506 26.384L189.946 24.248L190.066 23.6L190.474 23.336L191.146 22.4L191.818 21.2L190.018 20L189.178 20.984L189.154 21.176L187.81 23.384V23.48L187.21 24.44V25.016L186.346 25.856L184.786 28.496L184.81 30.032L185.362 30.896ZM198.12 20.384L197.016 20.456C196.68 20.456 196.368 20.456 196.008 20.432C195.816 20.432 195.6 20.6 195.456 20.6L195 20.408L192.672 20.288L192.6 22.256L192.888 22.544L194.352 22.496C194.424 22.496 194.568 22.472 194.736 22.424L194.856 22.304L195.384 22.376L195.528 23.36L195.432 24.896L195.576 26.024L195.456 30.92L195.336 34.304L195.552 34.544L195.192 36.056V37.904L196.464 38.096L197.136 37.976L197.832 37.592L197.64 35.888V31.376L197.352 30.92L197.376 30.896L197.592 29.456L197.568 27.608V27.2C197.568 27.032 197.544 26.816 197.544 26.624C197.52 26.48 197.52 25.88 197.52 25.664L197.568 23.888L197.472 23.36L197.616 22.352H198.36L199.08 22.4L199.32 22.472H200.4L200.472 21.344L200.328 20.336L198.12 20.384Z" fill="currentColor" style="--darkreader-inline-fill: currentColor;" data-darkreader-inline-fill=""></path>
+</svg>
+
+</a>
+        </div>
+
+        <p class="py-4 hidden lg:block">High quality coding education created by an Open-Source community.</p>
+
+        <div class="flex justify-between">
+          <a href="https://github.com/TheOdinProject">
+            <span aria-label="github" class="text-gray-700 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-400 text-4xl fab fa-github">
+</span></a>
+          <a href="https://discord.gg/V75WSQG">
+            <span aria-label="discord chat" class="text-gray-700 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-400 text-4xl fab fa-discord">
+</span></a>
+          <a href="https://www.facebook.com/theodinproject/">
+            <span aria-label="facebook" class="text-gray-700 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-400 text-4xl fab fa-facebook">
+</span></a>
+          <a href="https://twitter.com/TheOdinProject">
+            <span aria-label="twitter" class="text-gray-700 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-400 text-4xl fab fa-twitter">
+</span></a>        </div>
+      </div>
+
+        <div class="rounded-md px-8 pt-10 bg-white dark:bg-gray-800 hidden lg:block">
+    <h3 class="text-3xl font-bold pb-6">Start learning for free</h3>
+
+    <form action="/sign_up" accept-charset="UTF-8" method="get">
+      <div class="dark-form-input p-1 flex rounded-md bg-white dark:bg-gray-800 focus-within:ring-2 focus-within:ring-indigo-500 dark:focus-within:ring-gray-500 border border-gray-300 dark:border-gray-500">
+        <input placeholder="Email Address" required="required" class="bg-white border-none dark:bg-gray-800 dark:placeholder-gray-400 focus:ring-0 w-60 p-2 focus:outline-none block rounded-none lg:w-80 lg:text-md rounded-l-md" type="email" name="email" id="email">
+        <input type="submit" name="commit" value="Get Started!" class="button button--primary py-2" data-disable-with="Get Started!">
+      </div>
+</form>  </div>
+
+    </div>
+
+    <div class="flex lg:flex-row items-center lg:pb-4 gap-y-6 pt-6">
+      <div class="flex items-center space-x-0 gap-x-8 gap-y-3 flex-wrap justify-center md:block md:space-x-10">
+        <a class="hover:text-gray-500 dark:hover:text-gray-400" href="https://www.theodinproject.com/about">About</a>
+        <a class="hover:text-gray-500 dark:hover:text-gray-400" data-test-id="faq-link" href="https://www.theodinproject.com/faq">FAQ</a>
+        <a target="_blank" rel="noreferrer" class="hover:text-gray-500 dark:hover:text-gray-400" href="https://dev.to/theodinproject">Blog</a>
+        <a class="hover:text-gray-500 dark:hover:text-gray-400" href="https://www.theodinproject.com/success_stories">Success Stories</a>
+        <a class="hover:text-gray-500 dark:hover:text-gray-400" href="https://www.theodinproject.com/contributing">Contribute</a>
+        <a class="hover:text-gray-500 dark:hover:text-gray-400" href="https://www.theodinproject.com/lessons/installation_lessons">Appendix</a>
+        <a class="hover:text-gray-500 dark:hover:text-gray-400" href="https://www.theodinproject.com/terms_of_use">Terms of Use</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <!-- Google Analytics Tracking Snippet -->
+<!-- Only load it if we're in a production environment! -->
+
+
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-41005438-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+  
+
+</body></html>
