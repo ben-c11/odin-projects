@@ -1,0 +1,22 @@
+body{
+    display: flex;
+    flex-direction: ;
+    font: roboto, sans-serif;
+}
+
+.header,
+.footer{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.header-links{
+    display: flex;
+    display: row;
+}
+
+img{
+    width: 50px;
+    height: 50px;
+}
