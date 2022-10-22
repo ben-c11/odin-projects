@@ -137,7 +137,7 @@ img{
 
 .section3{
     background-color: #E5E7EB;
-
+    padding: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -146,15 +146,56 @@ img{
 
 .quote{
     display: flex;
-    width: 50%;
+    width: 55%;
     font-size: 36px;
     font-weight: 400px;
     color: #1F2937;
-
-    border: 1px red solid;
+    margin-left: 300px;
 }
 
 .thor{
     display: flex;
     justify-content: right;
+    width: 75%;
+}
+
+.section4{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+.container3{
+    background-color: #3882F6;
+    width: 60%;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 2.5%;
+}
+
+.sign-up2{
+    background-color: #3882F6;
+    border: solid white 1px;
+    color: white;
+    margin-left: 70px;
+    width: 15% 
+}
+
+.call{
+    font-weight: 600px;
+}
+
+.s4-text{
+    font-size: 14px;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+
+    background-color: #1F2937;
+    color: white;
+    padding: 20px;
 }
