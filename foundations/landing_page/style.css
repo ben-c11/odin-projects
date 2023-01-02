@@ -3,6 +3,9 @@ body{
     flex-direction: column;
     font-family: roboto, sans-serif;
 }
+*{
+    margin:0;
+}
 
 a {
     text-decoration: none;
@@ -172,7 +175,7 @@ img{
     flex-direction: row;
     justify-content: center;
     padding: 30px;
-    border-radius: 2.5%;
+    border-radius: 2.5% 2.5%;
 }
 
 .sign-up2{
