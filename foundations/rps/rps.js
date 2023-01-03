@@ -1,5 +1,6 @@
 // Randomly select a number 0-2, the number is set to be equivalent with one of the array items and given back to the player.
 const rps_array = ["Rock", "Paper", "Scissors"];
+let message;
 
 function getComputerChoice() {
 
@@ -32,63 +33,89 @@ function playRound(playerSelection, computerSelection) {
     // p < s; p > r
     // s < r; s > p 
     playerSelection = capitalise(playerSelection);
-    let message;
     
     if(playerSelection === "Rock"){
         if (computerSelection === "Scissors"){
             message = "You Win! Rock beats Scissors.";
             console.log(message)
-            return message;
+        
         } else if(computerSelection === "Paper"){
             message = 'You Lose! Paper beats Rock.';
             console.log(message)
-            return message;
+
         } else {
             message = "It's a draw! Both rocks smash to dust.";
             console.log(message)
-            return message;
+
         }
+        return message;
     }
-    console.log("playerSelection: " + playerSelection)
-    console.log("computerSelection: " + computerSelection)
     
     if(playerSelection === "Paper"){
         if (computerSelection === "Rock"){
             message = "You Win! Paper beats Rock.";
             console.log(message)
-            return message;
+        
         } else if(computerSelection === "Scissors"){
             message = 'You Lose! Scissors beats Paper.';
             console.log(message)
-            return message;
         } else {
             message = "It's a draw!";
             console.log(message)
-            return message;
         }
+        return message;
     }
     if(playerSelection === "Scissors"){
         if (computerSelection === "Paper"){
             message = "You Win! Scissors beats paper.";
             console.log(message)
-            return message;
+            
         } else if(computerSelection === "Rock"){
             message = "You Lose! Rock beats Scissors.";
             console.log(message)
-            return message;
+            
         } else {
             message = "It's a draw! Scissors collide!";
             console.log(message)
-            return message;
+            
         }
+        return message;
     }
      
 }
-computerSelection = getComputerChoice();
-playerSelection = "scissors";
-playRound(playerSelection, computerSelection);
 
 
 function game() {
+    let playerCount = 0;
+    let computerCount = 0;
+
+    for (let i = 0; i < 5; i++){
+        // Break up the console and indicates round number to user
+        console.log("ROUND " + (i+1))
+
+        //Choose rock, paper, scissors and play a round, looped.
+        computerSelection = getComputerChoice();
+        playerSelection = prompt("Rock, Paper, Scissors?");
+        console.log('Computer selection: ' + computerChoice)
+        playRound(playerSelection, computerSelection);
+        
+        // chatAt method to determine in player is the winner, where the playerCount is incremented, loser where computerCount is incremented or neither.
+        if(message.charAt(4) === 'W'){
+            playerCount++;
+        } else if(message.charAt(4) === 'L'){
+            computerCount++;
+        }
+        console.log("Player: " + playerCount + " Computer: " + computerCount);
+    }
+    if(playerCount > computerCount){
+        return "You are the winner!";
+    } else if(playerCount < computerCount) {
+        return "You lose! Play again to win."; 
+    } else {
+        return "It's a draw. Try again."
+    }
+
+    //Future implementation, loop until the count is at 3, rather than it being 5 rounds. 
     
 }
+console.log(game())
