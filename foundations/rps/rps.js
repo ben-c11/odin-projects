@@ -37,6 +37,7 @@ playerScoreDiv.classList.add('playerScoreDiv');
 playerScoreDiv.style = 'border: pink 1px solid;';
 document.body.append(playerScoreDiv);
 
+
 let computerScoreDiv = document.createElement('div');
 computerScoreDiv.classList.add('computerScoreDiv');
 computerScoreDiv.style = "border: pink 1px solid;";
@@ -71,6 +72,7 @@ function playRound(playerSelection, computerSelection) {
     // r < p; r > s 
     // p < s; p > r
     // s < r; s > p 
+    computerSelection = getComputerChoice();
 
     
     if(playerSelection === "Rock"){
@@ -153,7 +155,7 @@ function playRound(playerSelection, computerSelection) {
         }
         return message;
     }
-     
+     console.log("Playround func " + message)
 }
 
 /* I'm working on making the div display the computer (and player?) choices while still displaying the win/lose message. 
@@ -168,26 +170,30 @@ function game() {
     let computerCount = 0;
     let round = playerCount + computerCount + 1;
     
-       
+        /*
         resultsDiv.innerText = "ROUND " + round;
         console.log("ROUND " + round)
+        */
+    
+    
+        resultsDiv.innerText = "Rock, Paper, Scissors!";
+        console.log("playerCount: " + playerCount)
+        console.log("computerCount: " + computerCount)
 
         //Choose rock, paper, scissors and play a round, looped.
         computerSelection = getComputerChoice();
         let playerSelection;
-        if(playerSelection == undefined){
-            resultsDiv.innerText = "Rock, Paper, Scissors!";
-        }
         
-        for(let i = 0; i < 5; i++){
+    
         playRound(playerSelection, computerSelection);
+        
+        console.log("BLOOOP" + message)
+        if(message.charAt(4) === 'W'){
+            playerCount++;
+        } else if (message.charAt(4) === 'L'){
+            computerCount++;
         }
-
-    if(message.charAt(4) === 'W'){
-        playerCount++;
-    } else if (message.charAt(4) === 'L'){
-        computerCount++;
-    }
+      
 
     if(playerCount > computerCount){
         return "You are the winner!";
