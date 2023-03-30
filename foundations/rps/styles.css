@@ -1,7 +1,64 @@
-.resultsDiv{
-
+body {
+    background-color:;
 }
 
-.playerSelectionDisplay{
-    
+#header {
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+  }
+
+  /*Rock paper scissors buttons & their images*/
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
 }
+
+button {
+    height: 200px;
+    width: 200px;
+}
+
+input {
+    height: 200px; 
+    width: 200px;
+}
+
+.round_p {
+    display: flex;
+    justify-content: center;
+    height: 5px;
+}
+
+/* Profiles and scores*/
+.profiles {
+    display: flex;
+    text-align:center;
+    justify-content: space-evenly;
+    margin-top: 5em;
+}
+
+.profile-picture {
+    height: 10em;
+    width: 10em;
+}
+
+.player, .computer {
+    height: 25%;
+    width: 25%;
+}
+
+.winLose {
+    text-align: center;
+    height: 5px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }

@@ -16,19 +16,31 @@
         <div id="header">Rock, Paper, Scissors!</div>
         
         <div id="content">
-            <button class="rockBtn">Rock</button>
-            <button class="paperBtn">Paper</button>
-            <button class="scissorsBtn">Scissors</button>    
             <p class="round_p"></p>
+            <div class="buttons">
+                <input type="image" class="Btn" id="rockBtn" src="./images/rock.png" alt="rock">
+                <input type="image" class="Btn" id="paperBtn" src="./images/paper.png" alt="paper">
+                <input type="image" class="Btn" id="scissorsBtn" src="./images/scissors.png" alt="paper">
+            </div>    
+            
             <div class="resultsDiv">
                 <div class="winLose"></div>
-                <div class="playerSelectionDisplay"></div>
-                <div class="computerSelectionDisplay"></div>
-                <div class="playerScoreDisplay"></div>
-                <div class="computerScoreDisplay"></div>
-                <div class="end"></div>
+                <div class="profiles">
+                    <div class="player">
+                        <img class="profile-picture" id="player-img" src="./images/player.webp">
+                        <div class="playerSelectionDisplay"></div>
+                        <div class="playerScoreDisplay"></div>
+                    </div>
+                    <div class="computer">
+                        <img class="profile-picture" id="comp-img" src="./images/computer.png">
+                        <div class="computerSelectionDisplay"></div>
+                        <div class="computerScoreDisplay"></div>
+                    </div>
+                </div>
+                <div class="end"><!--<button class="play-again">Play Again?</button>--></div>
             </div>
         </div>
-        <div class="footer"></div>
+
+        <div class="footer"><!--BC 2023 github.io/accountName --></div>
     </body>
 </html>

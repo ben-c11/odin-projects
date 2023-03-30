@@ -1,17 +1,23 @@
-const rockBtn = document.querySelector('.rockBtn');
+const rockBtn = document.querySelector('#rockBtn');
 rockBtn.addEventListener('click', () => {
+    round++;
+    game();
     let playerSelection = 'Rock';
     playRound('Rock', computerSelection);
 });
 
-const paperBtn = document.querySelector('.paperBtn');
+const paperBtn = document.querySelector('#paperBtn');
 paperBtn.addEventListener('click', () => {
+    round++;
+    game();
     let playerSelection = 'Paper';
     playRound('Paper', computerSelection);
 });
 
-const scissorsBtn = document.querySelector('.scissorsBtn');
+const scissorsBtn = document.querySelector('#scissorsBtn');
 scissorsBtn.addEventListener('click', () => {
+    round++;
+    game();
     let playerSelection = "Scissors";
     playRound('Scissors', computerSelection)
 })
@@ -36,6 +42,7 @@ const end = document.querySelector('.end');
 // Randomly select a number 0-2, the number is set to be equivalent with one of the array items and given back to the player.
 const rps_array = ["Rock", "Paper", "Scissors"];
 let message;
+let round = 0;
 let playerScore = 0;
 let computerScore = 0;
 
@@ -61,7 +68,6 @@ function playRound(playerSelection, computerSelection) {
     // s < r; s > p 
     computerSelection = getComputerChoice();
 
-    let round = playerScore + computerScore + 1;    
     round_p.textContent = "ROUND " + round;
 
     // Player win outcome
@@ -104,10 +110,6 @@ function playRound(playerSelection, computerSelection) {
     return;
 }
 
-/*
-
-*/
-
 function game() {
 
         computerSelection = getComputerChoice();
@@ -116,14 +118,12 @@ function game() {
         playRound(playerSelection, computerSelection);
         
         
-    
-    if(playerScore > computerScore){
-        return "You are the winner!";
-    } else if(playerScore < computerScore) {
-        return "You lose! Play again to win."; 
-    } else {
-        return "It's a draw. Try again."
-    } 
+    if(playerScore == 5 || computerScore == 5){
+        if(playerScore > computerScore){
+            end.innerText="Well done, you're the winner!";
+        } else {
+            end.innerText="You Lose! Play again to win."; 
+        } 
+    }
     
 }
-console.log(game())
