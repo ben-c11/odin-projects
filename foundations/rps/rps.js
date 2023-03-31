@@ -32,7 +32,9 @@ const computerSelectionDisplay = document.querySelector('.computerSelectionDispl
 let playerScoreDisplay = document.querySelector('.playerScoreDisplay');
 let computerScoreDisplay = document.querySelector('.computerScoreDisplay');
 let winLose = document.querySelector('.winLose');
-const end = document.querySelector('.end');
+
+
+const endMsg = document.querySelector('.end');
 
 
 
@@ -107,6 +109,18 @@ function playRound(playerSelection, computerSelection) {
         playerSelectionDisplay.innerText=`Player Selection: ${playerSelection}`;
         computerSelectionDisplay.innerText=`Computer Selection: ${computerSelection}`;
     }
+
+    // Diplay end message
+    if(playerScore == 5 || computerScore == 5){
+
+        endMsg.setAttribute('id','endMsg');
+
+        if(playerScore > computerScore){
+            endMsg.innerText="Well done, you're the winner!";
+        } else {
+            endMsg.innerText="You Lose! Play again to win."; 
+        } 
+    }
     return;
 }
 
@@ -117,13 +131,5 @@ function game() {
         
         playRound(playerSelection, computerSelection);
         
-        
-    if(playerScore == 5 || computerScore == 5){
-        if(playerScore > computerScore){
-            end.innerText="Well done, you're the winner!";
-        } else {
-            end.innerText="You Lose! Play again to win."; 
-        } 
-    }
     
 }

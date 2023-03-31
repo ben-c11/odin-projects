@@ -13,10 +13,11 @@
     <body>
 
         <script src = "rps.js" defer> </script>
-        <div id="header">Rock, Paper, Scissors!</div>
+        <div id="header"><div class="head">Rock, Paper, Scissors!</div></div>
         
         <div id="content">
-            <p class="round_p"></p>
+            <p class="round_p">Choose one of the choices below. First to 5 wins.</p>
+
             <div class="buttons">
                 <input type="image" class="Btn" id="rockBtn" src="./images/rock.png" alt="rock">
                 <input type="image" class="Btn" id="paperBtn" src="./images/paper.png" alt="paper">
@@ -24,7 +25,7 @@
             </div>    
             
             <div class="resultsDiv">
-                <div class="winLose"></div>
+                
                 <div class="profiles">
                     <div class="player">
                         <img class="profile-picture" id="player-img" src="./images/player.webp">
@@ -37,7 +38,10 @@
                         <div class="computerScoreDisplay"></div>
                     </div>
                 </div>
-                <div class="end"><!--<button class="play-again">Play Again?</button>--></div>
+                <div class="winLose"></div>
+                <div class="box">
+                    <div class="end"><button class="end">Play Again?</button></div>
+                </div>
             </div>
         </div>
 
