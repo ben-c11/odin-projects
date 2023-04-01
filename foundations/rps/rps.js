@@ -36,6 +36,9 @@ let winLose = document.querySelector('.winLose');
 
 const end = document.querySelector('.end');
 const playAgain = document.querySelector('.play-again');
+playAgain.addEventListener('click', () => {
+    location.reload();
+})
 
 
 
@@ -131,9 +134,6 @@ function game() {
         let playerSelection;
         
         playRound(playerSelection, computerSelection);
-
-        //DELETE AFTERWARDS: TESTING ONLY
-        playerScore = 5;
         
     
 }
