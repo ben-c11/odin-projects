@@ -10,16 +10,12 @@ body {
  
 }
 
-.head {
-    
-}
 #header {
     display: flex;
     justify-content: center;
     padding: 8px;
     font-family: curz;
     font-size: 46px;
-    color: ;
     padding: 20px;
     background-color: #E0C9A6;
   }
@@ -28,7 +24,6 @@ body {
 .buttons {
     display: flex;
     justify-content: space-evenly;
-    background-color: ;
 }
 
 button {
@@ -83,24 +78,49 @@ input {
     justify-content: center;
 }
 
-#endMsg .{
+.button-box{
+    display: flex;
+    justify-content: center;
+    
+}
 
+.play-again{
+    opacity: 0;
+}
+
+button#play-again-refresh.play-again {
+    opacity: 100;
+    background-color:#d1bb9a;
+    color: black;
+    font-size: 38px;
+    display: flex;
+    position: absolute;
+    top: 37%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    width: 20%;
+    height: 10%;
+}
+
+
+#endMsg{
     height: 30%;
-    width: 80%;
+    width: 90%;
     background-color: black;
     color: white;
     top: 22%;
     position:absolute;
     opacity: 0;
 }
-/* figure out the end class with the button... then position the button and join that to an event that refreshes the page on clicking to reset the game.*/
+
 #endMsg.end {
     opacity: 100;
-
     display: flex;
     justify-content: center;
     align-content: center;
     font-size: 70px;
+    border-radius: 60px;
 }
 
 

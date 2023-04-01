@@ -34,8 +34,8 @@ let computerScoreDisplay = document.querySelector('.computerScoreDisplay');
 let winLose = document.querySelector('.winLose');
 
 
-const endMsg = document.querySelector('.end');
-
+const end = document.querySelector('.end');
+const playAgain = document.querySelector('.play-again');
 
 
 
@@ -113,12 +113,13 @@ function playRound(playerSelection, computerSelection) {
     // Diplay end message
     if(playerScore == 5 || computerScore == 5){
 
-        endMsg.setAttribute('id','endMsg');
+        end.setAttribute('id','endMsg');
+        playAgain.setAttribute('id', 'play-again-refresh');
 
         if(playerScore > computerScore){
-            endMsg.innerText="Well done, you're the winner!";
+            end.textContent="Well done, you're the winner!";
         } else {
-            endMsg.innerText="You Lose! Play again to win."; 
+            end.textContent="You Lose! Play again to win."; 
         } 
     }
     return;
@@ -130,6 +131,9 @@ function game() {
         let playerSelection;
         
         playRound(playerSelection, computerSelection);
+
+        //DELETE AFTERWARDS: TESTING ONLY
+        playerScore = 5;
         
     
 }
